@@ -100,8 +100,8 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6 max-w-6xl">
-        <section id="about" className="mb-8 scroll-mt-20">
+      <div className="container mx-auto px-4 py-12 max-w-6xl">
+        <section id="about" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Немного обо мне 😊
           </h2>
@@ -219,7 +219,7 @@ function App() {
           </div>
         </section>
 
-        <section id="qualifications" className="mb-8 scroll-mt-20">
+        <section id="qualifications" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Квалификация и опыт 🎓
           </h2>
@@ -266,7 +266,7 @@ function App() {
           </div>
         </section>
 
-        <section id="certificates" className="mb-8 scroll-mt-20">
+        <section id="certificates" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Дипломы и сертификаты 📜
           </h2>
@@ -276,7 +276,7 @@ function App() {
           <DocumentCarousel />
         </section>
 
-        <section id="methodology" className="mb-8 scroll-mt-20">
+        <section id="methodology" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Моя методика 🎯
           </h2>
@@ -383,7 +383,7 @@ function App() {
           </div>
         </section>
 
-        <section id="testimonials" className="mb-8 scroll-mt-20">
+        <section id="testimonials" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Что говорят мои ученики 💬
           </h2>
@@ -469,7 +469,7 @@ function App() {
           </div>
         </section>
 
-        <section id="platforms" className="mb-8 scroll-mt-20">
+        <section id="platforms" className="mb-16 scroll-mt-20">
           <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-turquoise to-bright-magenta">
             <div className="rounded-[2.25rem] p-6 md:p-10 bg-white/95 backdrop-blur-sm">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
@@ -540,7 +540,7 @@ function App() {
           </div>
         </section>
 
-        <section id="pricing" className="mb-8 scroll-mt-20">
+        <section id="pricing" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Стоимость занятий 💰
           </h2>
@@ -613,7 +613,7 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="mb-8 scroll-mt-20">
+        <section id="contact" className="mb-16 scroll-mt-20">
           <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
             <div className="bg-white rounded-[2.25rem] p-6 md:p-10">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
