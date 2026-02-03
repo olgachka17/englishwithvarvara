@@ -21,9 +21,21 @@ import {
 } from '@phosphor-icons/react'
 
 function App() {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const offset = 80
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+      const offsetPosition = elementPosition - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
   }
+
+  const scrollToContact = () => scrollToSection('contact')
 
   return (
     <div className="min-h-screen relative">
@@ -89,7 +101,7 @@ function App() {
       </div>
 
       <div className="container mx-auto px-4 py-6 max-w-6xl">
-        <section className="mb-8">
+        <section id="about" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Немного обо мне 😊
           </h2>
@@ -207,7 +219,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section id="qualifications" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Квалификация и опыт 🎓
           </h2>
@@ -254,7 +266,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section id="certificates" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Дипломы и сертификаты 📜
           </h2>
@@ -264,7 +276,7 @@ function App() {
           <DocumentCarousel />
         </section>
 
-        <section className="mb-8">
+        <section id="methodology" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Моя методика 🎯
           </h2>
@@ -371,7 +383,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section id="testimonials" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Что говорят мои ученики 💬
           </h2>
@@ -457,7 +469,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section id="platforms" className="mb-8 scroll-mt-20">
           <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-turquoise to-bright-magenta">
             <div className="rounded-[2.25rem] p-6 md:p-10 bg-white/95 backdrop-blur-sm">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
@@ -528,7 +540,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mb-8">
+        <section id="pricing" className="mb-8 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Стоимость занятий 💰
           </h2>
@@ -601,7 +613,7 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="mb-8">
+        <section id="contact" className="mb-8 scroll-mt-20">
           <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
             <div className="bg-white rounded-[2.25rem] p-6 md:p-10">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
