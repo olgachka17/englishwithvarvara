@@ -72,16 +72,16 @@ export function DocumentCarousel() {
                 key={`${doc.id}-${currentIndex}`}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ 
-                  opacity: idx === 1 ? 1 : 0.5, 
-                  scale: idx === 1 ? 1 : 0.85,
+                  opacity: idx === 1 ? 1 : 0.6, 
+                  scale: idx === 1 ? 1 : 0.88,
                 }}
                 transition={{ duration: 0.3 }}
                 className={`flex-shrink-0 ${idx === 1 ? 'z-10' : 'z-0'}`}
-                style={{ width: idx === 1 ? '320px' : '280px' }}
+                style={{ width: idx === 1 ? '340px' : '300px' }}
               >
                 <Card 
-                  className={`overflow-hidden shadow-lg hover:shadow-2xl transition-all cursor-pointer ${
-                    idx === 1 ? 'border-2 border-primary' : ''
+                  className={`overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer border-0 ${
+                    idx === 1 ? 'ring-4 ring-coral/50' : ''
                   }`}
                   onClick={() => idx === 1 && setSelectedDoc(doc)}
                 >
@@ -92,8 +92,8 @@ export function DocumentCarousel() {
                         alt={doc.title}
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute top-3 right-3">
-                        <Badge className="bg-accent text-accent-foreground">
+                      <div className="absolute top-4 right-4">
+                        <Badge className="bg-coral text-white border-0 shadow-lg font-semibold">
                           <FilePdf className="mr-1" weight="fill" size={16} />
                           PDF
                         </Badge>
@@ -102,12 +102,12 @@ export function DocumentCarousel() {
                         <motion.div
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
-                          className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
+                          className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8 opacity-0 hover:opacity-100 transition-opacity"
                         >
                           <div className="flex gap-3">
                             <Button
                               size="sm"
-                              className="bg-white text-black hover:bg-white/90"
+                              className="bg-white text-foreground hover:bg-white/90 font-semibold shadow-lg border-0"
                             >
                               <Eye className="mr-2" weight="fill" />
                               Просмотр
@@ -116,9 +116,9 @@ export function DocumentCarousel() {
                         </motion.div>
                       )}
                     </div>
-                    <div className="p-4">
-                      <h4 className="font-bold text-lg mb-1">{doc.title}</h4>
-                      <p className="text-sm text-muted-foreground">{doc.description}</p>
+                    <div className="p-5 bg-white">
+                      <h4 className="font-bold text-xl mb-2">{doc.title}</h4>
+                      <p className="text-sm text-foreground/60">{doc.description}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -131,28 +131,28 @@ export function DocumentCarousel() {
           <Button
             onClick={prevSlide}
             size="icon"
-            className="pointer-events-auto rounded-full bg-primary text-primary-foreground shadow-lg hover:scale-110 transition-transform"
+            className="pointer-events-auto rounded-full bg-coral text-white shadow-xl hover:scale-110 transition-transform border-0 hover:bg-coral/90"
           >
             <CaretLeft weight="bold" size={24} />
           </Button>
           <Button
             onClick={nextSlide}
             size="icon"
-            className="pointer-events-auto rounded-full bg-primary text-primary-foreground shadow-lg hover:scale-110 transition-transform"
+            className="pointer-events-auto rounded-full bg-coral text-white shadow-xl hover:scale-110 transition-transform border-0 hover:bg-coral/90"
           >
             <CaretRight weight="bold" size={24} />
           </Button>
         </div>
 
-        <div className="flex justify-center gap-2 mt-6">
+        <div className="flex justify-center gap-2 mt-8">
           {documents.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-2 h-2 rounded-full transition-all ${
+              className={`h-2.5 rounded-full transition-all ${
                 idx === currentIndex 
-                  ? 'bg-primary w-8' 
-                  : 'bg-muted-foreground/30'
+                  ? 'bg-coral w-10' 
+                  : 'bg-foreground/20 w-2.5'
               }`}
             />
           ))}
@@ -160,13 +160,13 @@ export function DocumentCarousel() {
       </div>
 
       <Dialog open={!!selectedDoc} onOpenChange={() => setSelectedDoc(null)}>
-        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto border-0 shadow-2xl">
           <DialogHeader>
-            <DialogTitle className="text-2xl">{selectedDoc?.title}</DialogTitle>
+            <DialogTitle className="text-3xl font-bold">{selectedDoc?.title}</DialogTitle>
           </DialogHeader>
-          <div className="space-y-4">
-            <p className="text-muted-foreground">{selectedDoc?.description}</p>
-            <div className="relative aspect-[3/4] bg-muted rounded-lg overflow-hidden">
+          <div className="space-y-6">
+            <p className="text-foreground/70 text-lg">{selectedDoc?.description}</p>
+            <div className="relative aspect-[3/4] bg-muted rounded-2xl overflow-hidden shadow-lg">
               <img 
                 src={selectedDoc?.thumbnailUrl} 
                 alt={selectedDoc?.title}
@@ -174,7 +174,7 @@ export function DocumentCarousel() {
               />
             </div>
             <div className="flex gap-3 justify-end">
-              <Button variant="outline">
+              <Button variant="outline" className="border-2 border-coral text-coral hover:bg-coral hover:text-white font-semibold">
                 <Download className="mr-2" weight="bold" />
                 Скачать PDF
               </Button>
