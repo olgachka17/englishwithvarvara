@@ -99,8 +99,8 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-6xl">
-        <section id="about" className="mb-16 scroll-mt-20">
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        <section id="about" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Немного обо мне 😊
           </h2>
@@ -165,7 +165,7 @@ function App() {
           </div>
         </section>
 
-        <section id="qualifications" className="mb-16 scroll-mt-20">
+        <section id="qualifications" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Квалификация и опыт 🎓
           </h2>
@@ -212,7 +212,7 @@ function App() {
           </div>
         </section>
 
-        <section id="certificates" className="mb-16 scroll-mt-20">
+        <section id="certificates" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Дипломы и сертификаты 📜
           </h2>
@@ -222,7 +222,7 @@ function App() {
           <DocumentCarousel />
         </section>
 
-        <section id="methodology" className="mb-16 scroll-mt-20">
+        <section id="methodology" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Моя методика 🎯
           </h2>
@@ -329,7 +329,7 @@ function App() {
           </div>
         </section>
 
-        <section id="testimonials" className="mb-16 scroll-mt-20">
+        <section id="testimonials" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Что говорят мои ученики 💬
           </h2>
@@ -415,7 +415,7 @@ function App() {
           </div>
         </section>
 
-        <section id="platforms" className="mb-16 scroll-mt-20">
+        <section id="platforms" className="mb-20 scroll-mt-20">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
               Платформы и специализация 💻
@@ -488,7 +488,7 @@ function App() {
           </div>
         </section>
 
-        <section id="pricing" className="mb-16 scroll-mt-20">
+        <section id="pricing" className="mb-20 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Стоимость занятий 💰
           </h2>
@@ -561,7 +561,7 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="mb-16 scroll-mt-20">
+        <section id="contact" className="mb-20 scroll-mt-20">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
               Готов начать? 🚀
