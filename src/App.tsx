@@ -89,7 +89,7 @@ function App() {
                 }}>
                 <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                 <Sparkle className="inline mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">10 лет преподавания</span>
+                <span className="relative z-10 font-bold">10 лет опыта</span>
               </Badge>
               <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-yellow/30 relative overflow-hidden group" 
                 style={{ 
@@ -98,7 +98,7 @@ function App() {
                 }}>
                 <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                 <Star className="mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">C1 English</span>
+                <span className="relative z-10 font-bold">C1 уровень</span>
               </Badge>
               <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-blue/30 relative overflow-hidden group" 
                 style={{ 
@@ -116,7 +116,7 @@ function App() {
                 }}>
                 <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                 <Heart className="mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">Ученики 18+</span>
+                <span className="relative z-10 font-bold">Для взрослых 18+</span>
               </Badge>
             </motion.div>
             
@@ -137,11 +137,11 @@ function App() {
                   backgroundSize: '200% 200%'
                 }}
               >
-                Английский для взрослых 18+:
+                Привет, будущий ученик!
               </span>
               <br />
               <span className="text-foreground">
-                без стеснения заговорите уже через несколько месяцев
+                Полюби английский вместе со мной
               </span>
             </motion.h1>
             
@@ -152,26 +152,17 @@ function App() {
               className="text-xl md:text-2xl lg:text-3xl mb-10 leading-relaxed max-w-4xl mx-auto"
               style={{ color: 'var(--foreground)' }}
             >
-              Я <span className="font-bold px-3 py-1 rounded-full" style={{ 
+              Меня зовут <span className="font-bold px-3 py-1 rounded-full" style={{ 
                 background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
                 color: 'white',
                 boxShadow: '0 0 15px var(--neon-pink)'
-              }}>Варвара</span>, преподаю английский <span className="font-bold px-3 py-1 rounded-full" style={{ 
-                background: 'linear-gradient(135deg, var(--neon-yellow), var(--neon-pink))',
-                color: 'white',
-                boxShadow: '0 0 15px var(--neon-yellow)'
-              }}>10 лет</span> и помогаю взрослым заговорить уверенно для <span className="font-bold px-3 py-1 rounded-full" style={{ 
-                background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                color: 'white',
-                boxShadow: '0 0 15px var(--neon-blue)'
-              }}>работы, переезда и путешествий</span>
+              }}>Варвара</span>, и я помогу вам полюбить английский! 💖
             </motion.p>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-col items-center gap-3"
             >
               <Button 
                 size="lg" 
@@ -187,16 +178,8 @@ function App() {
               >
                 <span className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
                 <Sparkle className="mr-3 relative z-10" weight="fill" size={28} />
-                <span className="relative z-10">Записаться на бесплатный пробный урок</span>
+                <span className="relative z-10">Записаться на пробный урок</span>
               </Button>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.7 }}
-                className="text-sm md:text-base text-muted-foreground font-medium"
-              >
-                20 минут знакомства и персональный план обучения
-              </motion.p>
             </motion.div>
           </motion.div>
         </div>
