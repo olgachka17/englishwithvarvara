@@ -27,11 +27,11 @@ function App() {
 
   return (
     <div className="min-h-screen relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.98_0.02_85)] via-[oklch(0.96_0.06_340)] to-[oklch(0.94_0.08_30)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.98_0.02_85)] via-[oklch(0.96_0.08_340)] to-[oklch(0.95_0.10_30)]" />
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[oklch(0.72_0.24_355)] opacity-[0.12] rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[oklch(0.85_0.18_95)] opacity-[0.15] rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[oklch(0.82_0.16_350)] opacity-[0.18] rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[oklch(0.70_0.18_200)] opacity-[0.15] rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[oklch(0.88_0.22_105)] opacity-[0.18] rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[oklch(0.72_0.22_50)] opacity-[0.20] rounded-full blur-3xl" />
       </div>
       
       <div className="relative overflow-hidden">
@@ -53,15 +53,15 @@ function App() {
                 <Sparkle className="inline mr-2" weight="fill" size={18} />
                 10 лет преподавания
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-bright-magenta text-bright-magenta-foreground hover:bg-bright-magenta/90 shadow-md font-semibold border-0">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-turquoise text-turquoise-foreground hover:bg-turquoise/90 shadow-md font-semibold border-0">
                 <Star className="mr-2" weight="fill" size={18} />
                 C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-lavender text-lavender-foreground hover:bg-lavender/90 shadow-md font-semibold border-0">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-orange text-orange-foreground hover:bg-orange/90 shadow-md font-semibold border-0">
                 <Globe className="mr-2" weight="fill" size={18} />
                 Международный опыт
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-accent text-accent-foreground hover:bg-accent/90 shadow-md font-semibold border-0">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-bright-magenta text-bright-magenta-foreground hover:bg-bright-magenta/90 shadow-md font-semibold border-0">
                 <Heart className="mr-2" weight="fill" size={18} />
                 Ученики 18+
               </Badge>
@@ -153,7 +153,7 @@ function App() {
                 <div className="absolute -inset-2.5 bg-gradient-to-br from-[oklch(0.95_0.08_30)] via-[oklch(0.92_0.10_20)] to-[oklch(0.88_0.10_15)] rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity" />
                 
                 <motion.div
-                  className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-gradient-to-br from-bright-magenta to-accent shadow-lg flex items-center justify-center z-10"
+                  className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink shadow-lg flex items-center justify-center z-10"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ 
                     duration: 4.5, 
@@ -180,7 +180,7 @@ function App() {
                 </motion.div>
                 
                 <motion.div
-                  className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-gradient-to-br from-sunny-yellow to-peach shadow-md flex items-center justify-center z-10"
+                  className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-gradient-to-br from-sunny-yellow to-orange shadow-md flex items-center justify-center z-10"
                   animate={{ 
                     rotate: [0, 8, -8, 0],
                     scale: [1, 1.05, 1]
@@ -196,7 +196,7 @@ function App() {
                 </motion.div>
                 
                 <motion.div
-                  className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-lavender to-soft-pink shadow-sm flex items-center justify-center z-10"
+                  className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-turquoise to-lavender shadow-sm flex items-center justify-center z-10"
                   animate={{ 
                     x: [0, 5, -5, 0],
                     y: [0, -5, 5, 0]
@@ -213,7 +213,7 @@ function App() {
                 </motion.div>
                 
                 <motion.div
-                  className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-soft-pink shadow-md flex items-center justify-center z-10"
+                  className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow shadow-md flex items-center justify-center z-10"
                   animate={{ 
                     rotate: [0, -6, 6, 0]
                   }}
@@ -228,7 +228,7 @@ function App() {
                   <ChatCircleDots size={24} weight="duotone" className="text-white" />
                 </motion.div>
                 
-                <div className="relative p-2 bg-gradient-to-br from-bright-magenta via-accent to-coral rounded-full shadow-2xl">
+                <div className="relative p-2 bg-gradient-to-br from-bright-magenta via-soft-pink to-orange rounded-full shadow-2xl">
                   <div className="p-1.5 bg-white rounded-full">
                     <img 
                       src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces" 
@@ -260,7 +260,7 @@ function App() {
             <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-sunny-yellow to-peach flex items-center justify-center mb-3 shadow-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mb-3 shadow-lg">
                     <GraduationCap size={28} className="text-white" weight="fill" />
                   </div>
                   <h3 className="text-lg font-bold">Образование</h3>
@@ -274,7 +274,7 @@ function App() {
             <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-lavender to-bright-magenta flex items-center justify-center mb-3 shadow-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mb-3 shadow-lg">
                     <Globe size={28} className="text-white" weight="fill" />
                   </div>
                   <h3 className="text-lg font-bold">Международный опыт</h3>
@@ -288,7 +288,7 @@ function App() {
             <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-accent to-coral flex items-center justify-center mb-3 shadow-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mb-3 shadow-lg">
                     <Student size={28} className="text-white" weight="fill" />
                   </div>
                   <h3 className="text-lg font-bold">Практика</h3>
@@ -335,11 +335,11 @@ function App() {
             <Card className="p-6 md:p-8 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardContent className="p-0 space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-bright-magenta to-accent flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Student size={28} className="text-white" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2.5 text-bright-magenta">Беру любой уровень</h3>
+                    <h3 className="text-xl font-bold mb-2.5 text-turquoise">Беру любой уровень</h3>
                     <p className="text-base leading-relaxed text-foreground/70">
                       Можно прийти <span className="font-bold text-foreground">"с нуля"</span>, можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
                     </p>
@@ -349,11 +349,11 @@ function App() {
                 <Separator className="my-4" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-coral to-primary flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Chats size={28} className="text-white" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2.5 text-coral">Живые уроки</h3>
+                    <h3 className="text-xl font-bold mb-2.5 text-bright-magenta">Живые уроки</h3>
                     <p className="text-base leading-relaxed text-foreground/70">
                       Много общения, понятные объяснения и практика, которая сразу закрепляет материал. Использую качественные материалы платформы и добавляю свои задания под вашу цель.
                     </p>
@@ -363,11 +363,11 @@ function App() {
                 <Separator className="my-4" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-sunny-yellow to-peach flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-sunny-yellow to-orange flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Sparkle size={28} className="text-white" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2.5 text-primary">Современные материалы</h3>
+                    <h3 className="text-xl font-bold mb-2.5 text-orange">Современные материалы</h3>
                     <p className="text-base leading-relaxed text-foreground/70">
                       Иногда подключаю короткие видео и мемы по теме — не ради "развлечь", а чтобы новые слова и правила <span className="font-bold text-foreground">запоминались быстрее и без ощущения зубрёжки</span>.
                     </p>
@@ -380,7 +380,7 @@ function App() {
               <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-lavender to-bright-magenta flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
                       <Chats size={26} className="text-white" weight="fill" />
                     </div>
                     <h3 className="text-base font-bold">Разговорный английский</h3>
@@ -394,7 +394,7 @@ function App() {
               <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sunny-yellow to-peach flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sunny-yellow to-orange flex items-center justify-center mx-auto mb-3 shadow-lg">
                       <GraduationCap size={26} className="text-white" weight="fill" />
                     </div>
                     <h3 className="text-base font-bold">Грамматика "по полочкам"</h3>
@@ -408,7 +408,7 @@ function App() {
               <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                   <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-coral to-primary flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
                       <Globe size={26} className="text-white" weight="fill" />
                     </div>
                     <h3 className="text-base font-bold">Для работы и путешествий</h3>
@@ -423,7 +423,7 @@ function App() {
             <Card className="p-6 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardContent className="p-0">
                 <div className="flex items-start gap-4">
-                  <CheckCircle size={32} className="flex-shrink-0 mt-1 text-bright-magenta" weight="fill" />
+                  <CheckCircle size={32} className="flex-shrink-0 mt-1 text-turquoise" weight="fill" />
                   <div>
                     <h3 className="text-lg font-bold mb-2">Индивидуальный подход</h3>
                     <p className="text-base leading-relaxed text-foreground/70">
@@ -458,7 +458,7 @@ function App() {
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-bright-magenta to-accent flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center text-white font-bold text-lg shadow-lg">
                       А
                     </div>
                     <div>
@@ -488,7 +488,7 @@ function App() {
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-coral to-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center text-white font-bold text-lg shadow-lg">
                       Д
                     </div>
                     <div>
@@ -504,7 +504,7 @@ function App() {
                   <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
                     "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
                   </p>
-                  <Badge className="text-xs bg-coral text-white font-semibold border-0 shadow-sm">
+                  <Badge className="text-xs bg-turquoise text-white font-semibold border-0 shadow-sm">
                     Повысил уровень до B2+
                   </Badge>
                 </CardContent>
@@ -518,7 +518,7 @@ function App() {
               <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-lavender to-soft-pink flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center text-white font-bold text-lg shadow-lg">
                       Е
                     </div>
                     <div>
@@ -534,7 +534,7 @@ function App() {
                   <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
                     "Начала после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
                   </p>
-                  <Badge className="text-xs bg-accent text-white font-semibold border-0 shadow-sm">
+                  <Badge className="text-xs bg-orange text-white font-semibold border-0 shadow-sm">
                     Вернулась к английскому после 8 лет
                   </Badge>
                 </CardContent>
@@ -550,7 +550,7 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-lavender to-bright-magenta">
+          <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-turquoise to-bright-magenta">
             <div className="rounded-[2.25rem] p-6 md:p-10 bg-white/95 backdrop-blur-sm">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
                 Платформы и специализация 💻
@@ -563,7 +563,7 @@ function App() {
                 <Card className="p-5 shadow-lg border-0 bg-white">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-gradient-to-br from-lavender to-bright-magenta rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <div className="w-11 h-11 bg-gradient-to-br from-turquoise to-lavender rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                         <ChatCircleDots size={22} className="text-white" weight="fill" />
                       </div>
                       <div>
@@ -577,7 +577,7 @@ function App() {
                 <Card className="p-5 shadow-lg border-0 bg-white">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-gradient-to-br from-sunny-yellow to-peach rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <div className="w-11 h-11 bg-gradient-to-br from-sunny-yellow to-orange rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                         <CheckCircle size={22} className="text-white" weight="fill" />
                       </div>
                       <div>
@@ -591,7 +591,7 @@ function App() {
                 <Card className="p-5 shadow-lg border-0 bg-white">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-gradient-to-br from-accent to-coral rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <div className="w-11 h-11 bg-gradient-to-br from-bright-magenta to-soft-pink rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                         <Student size={22} className="text-white" weight="fill" />
                       </div>
                       <div>
@@ -605,7 +605,7 @@ function App() {
                 <Card className="p-5 shadow-lg border-0 bg-white">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-gradient-to-br from-bright-magenta to-soft-pink rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <div className="w-11 h-11 bg-gradient-to-br from-coral to-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                         <Heart size={22} className="text-white" weight="fill" />
                       </div>
                       <div>
@@ -670,30 +670,30 @@ function App() {
 
             <motion.div whileHover={{ scale: 1.02, y: -4 }} transition={{ type: "spring", stiffness: 300 }}>
               <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-sunny-yellow to-coral opacity-10 rounded-full blur-3xl" />
+                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-turquoise to-lavender opacity-10 rounded-full blur-3xl" />
                 <CardContent className="p-0 relative">
-                  <Badge className="mb-3 bg-coral text-white font-bold text-xs border-0 shadow-md">
+                  <Badge className="mb-3 bg-turquoise text-white font-bold text-xs border-0 shadow-md">
                     Выгодное предложение
                   </Badge>
                   <h3 className="text-xl font-bold mb-4">Парные занятия</h3>
                   <div className="mb-5">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <span className="text-4xl font-bold bg-gradient-to-r from-coral to-primary bg-clip-text text-transparent">1400₽</span>
+                      <span className="text-4xl font-bold bg-gradient-to-r from-turquoise to-lavender bg-clip-text text-transparent">1400₽</span>
                       <span className="text-foreground/60 text-base font-semibold">/урок</span>
                     </div>
                   </div>
                   <Separator className="my-4" />
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2.5">
-                      <Clock size={22} className="flex-shrink-0 mt-0.5 text-coral" weight="fill" />
+                      <Clock size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
                       <span className="text-sm font-medium">60-65 минут в паре с другом</span>
                     </li>
                     <li className="flex items-start gap-2.5">
-                      <Chats size={22} className="flex-shrink-0 mt-0.5 text-coral" weight="fill" />
+                      <Chats size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
                       <span className="text-sm font-medium">Больше практики общения</span>
                     </li>
                     <li className="flex items-start gap-2.5">
-                      <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-coral" weight="fill" />
+                      <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
                       <span className="text-sm font-medium">Экономия + весёлая атмосфера</span>
                     </li>
                   </ul>
@@ -711,7 +711,7 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-coral to-sunny-yellow">
+          <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
             <div className="bg-white rounded-[2.25rem] p-6 md:p-10">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
                 Готов начать? 🚀
@@ -722,9 +722,9 @@ function App() {
 
               <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-6">
                 <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-accent/10">
+                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-bright-magenta/10">
                     <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-accent flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
                         <Phone size={26} className="text-white" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-1.5 text-base">Телефон</h3>
@@ -736,13 +736,13 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-lavender/10">
+                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-turquoise/10">
                     <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-lavender to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
                         <EnvelopeSimple size={26} className="text-white" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-1.5 text-base">Email</h3>
-                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-lavender hover:opacity-80 transition-colors">
+                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-turquoise hover:opacity-80 transition-colors">
                         varvara.ishenko@gmail.com
                       </a>
                     </CardContent>
@@ -750,9 +750,9 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-sunny-yellow/10">
+                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-orange/10">
                     <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-coral to-primary flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mx-auto mb-3 shadow-lg">
                         <MapPin size={26} className="text-white" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-1.5 text-base">Локация</h3>
@@ -769,7 +769,7 @@ function App() {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button 
                     size="lg" 
-                    className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold bg-gradient-to-r from-bright-magenta to-accent text-white hover:opacity-90 border-0"
+                    className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold bg-gradient-to-r from-bright-magenta to-soft-pink text-white hover:opacity-90 border-0"
                     asChild
                   >
                     <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
@@ -784,7 +784,7 @@ function App() {
         </motion.section>
       </div>
 
-      <footer className="relative py-8 bg-gradient-to-br from-sunny-yellow/20 via-lavender/20 to-bright-magenta/15">
+      <footer className="relative py-8 bg-gradient-to-br from-sunny-yellow/20 via-turquoise/20 to-bright-magenta/15">
         <div className="container mx-auto px-4 text-center">
           <p className="text-foreground/70 mb-2 text-sm font-medium">
             © 2024 Варвара Ищенко. Преподаватель английского языка

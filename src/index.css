@@ -35,7 +35,7 @@
 
   --coral: oklch(0.68 0.24 30);
 
-  --sunny-yellow: oklch(0.85 0.18 95);
+  --sunny-yellow: oklch(0.88 0.22 105);
   --sunny-yellow-foreground: oklch(0.30 0.05 320);
 
   --bright-magenta: oklch(0.62 0.28 340);
@@ -43,6 +43,15 @@
 
   --lavender: oklch(0.75 0.14 300);
   --lavender-foreground: oklch(1 0 0);
+
+  --turquoise: oklch(0.70 0.18 200);
+  --turquoise-foreground: oklch(1 0 0);
+
+  --lime: oklch(0.82 0.20 130);
+  --lime-foreground: oklch(0.25 0.05 320);
+
+  --orange: oklch(0.72 0.22 50);
+  --orange-foreground: oklch(1 0 0);
 
   --border: oklch(0.90 0.04 50);
   --input: oklch(0.90 0.04 50);
@@ -83,6 +92,12 @@
   --color-bright-magenta-foreground: var(--bright-magenta-foreground);
   --color-lavender: var(--lavender);
   --color-lavender-foreground: var(--lavender-foreground);
+  --color-turquoise: var(--turquoise);
+  --color-turquoise-foreground: var(--turquoise-foreground);
+  --color-lime: var(--lime);
+  --color-lime-foreground: var(--lime-foreground);
+  --color-orange: var(--orange);
+  --color-orange-foreground: var(--orange-foreground);
 
   --radius-sm: calc(var(--radius) * 0.5);
   --radius-md: var(--radius);
