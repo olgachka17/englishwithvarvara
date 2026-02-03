@@ -150,12 +150,16 @@ function App() {
               transition={{ delay: 0.3 }}
             >
               <div className="relative group">
-                <div className="absolute -inset-3 bg-gradient-to-br from-coral via-accent to-primary rounded-[2rem] blur-2xl opacity-40 group-hover:opacity-60 transition-opacity" />
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=350&fit=crop&crop=faces" 
-                  alt="Варвара Ищенко" 
-                  className="relative rounded-[2rem] shadow-2xl w-full h-auto object-cover border-4 border-white"
-                />
+                <div className="absolute -inset-3 bg-gradient-to-br from-coral via-accent to-lavender rounded-full blur-3xl opacity-50 group-hover:opacity-70 transition-opacity animate-pulse" />
+                <div className="relative p-2 bg-gradient-to-br from-coral via-accent to-lavender rounded-full shadow-2xl">
+                  <div className="p-1.5 bg-white rounded-full">
+                    <img 
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces" 
+                      alt="Варвара Ищенко" 
+                      className="w-full h-full object-cover rounded-full aspect-square shadow-xl"
+                    />
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
