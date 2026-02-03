@@ -784,14 +784,52 @@ function App() {
         </motion.section>
       </div>
 
-      <footer className="relative py-8 bg-gradient-to-br from-sunny-yellow/20 via-turquoise/20 to-bright-magenta/15">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-foreground/70 mb-2 text-sm font-medium">
-            © 2024 Варвара Ищенко. Преподаватель английского языка
-          </p>
-          <p className="text-xs text-foreground/60">
-            Сделано с <Heart className="inline" weight="fill" size={14} style={{ color: 'oklch(0.72 0.24 355)' }} /> для моих будущих учеников
-          </p>
+      <footer className="relative py-10 bg-white/60 backdrop-blur-sm border-t border-border/40">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-4">
+            <div className="flex justify-center gap-6 mb-5">
+              <motion.a 
+                href="tel:+79502274443"
+                className="text-foreground/60 hover:text-bright-magenta transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Phone size={24} weight="fill" />
+              </motion.a>
+              <motion.a 
+                href="mailto:varvara.ishenko@gmail.com"
+                className="text-foreground/60 hover:text-turquoise transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <EnvelopeSimple size={24} weight="fill" />
+              </motion.a>
+              <motion.a 
+                href="https://wa.me/79502274443"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-orange transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <ChatCircleDots size={24} weight="fill" />
+              </motion.a>
+            </div>
+            
+            <Separator className="max-w-xs mx-auto" />
+            
+            <div>
+              <p className="text-foreground/80 mb-1 font-semibold">
+                Варвара Ищенко
+              </p>
+              <p className="text-foreground/60 text-sm mb-3">
+                Преподаватель английского языка
+              </p>
+              <p className="text-xs text-foreground/50">
+                © 2024 Все права защищены
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
