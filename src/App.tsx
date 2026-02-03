@@ -154,16 +154,27 @@ function App() {
                 
                 <motion.div
                   className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-[oklch(0.85_0.18_25)] to-[oklch(0.82_0.15_340)] shadow-lg flex items-center justify-center z-10"
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  animate={{ y: [0, -12, 0] }}
+                  transition={{ 
+                    duration: 4.5, 
+                    repeat: Infinity, 
+                    ease: [0.45, 0.05, 0.55, 0.95],
+                    repeatType: "reverse"
+                  }}
                 >
                   <Sparkle size={36} weight="duotone" className="text-white" />
                 </motion.div>
                 
                 <motion.div
                   className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-gradient-to-br from-[oklch(0.88_0.12_340)] to-[oklch(0.85_0.15_25)] shadow-md flex items-center justify-center z-10"
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  animate={{ y: [0, 12, 0] }}
+                  transition={{ 
+                    duration: 5, 
+                    repeat: Infinity, 
+                    ease: [0.42, 0, 0.58, 1],
+                    delay: 0.8,
+                    repeatType: "reverse"
+                  }}
                 >
                   <Heart size={28} weight="duotone" className="text-white" />
                 </motion.div>
@@ -171,10 +182,15 @@ function App() {
                 <motion.div
                   className="absolute top-8 -left-10 w-14 h-14 rounded-full bg-gradient-to-br from-[oklch(0.80_0.16_340)] to-[oklch(0.78_0.18_20)] shadow-md flex items-center justify-center z-10"
                   animate={{ 
-                    rotate: [0, 15, -15, 0],
-                    scale: [1, 1.1, 1]
+                    rotate: [0, 8, -8, 0],
+                    scale: [1, 1.05, 1]
                   }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{ 
+                    duration: 6, 
+                    repeat: Infinity, 
+                    ease: [0.43, 0.13, 0.23, 0.96],
+                    repeatType: "reverse"
+                  }}
                 >
                   <Star size={24} weight="duotone" className="text-white" />
                 </motion.div>
@@ -182,10 +198,16 @@ function App() {
                 <motion.div
                   className="absolute -top-4 left-12 w-12 h-12 rounded-full bg-gradient-to-br from-[oklch(0.92_0.06_40)] to-[oklch(0.85_0.14_30)] shadow-sm flex items-center justify-center z-10"
                   animate={{ 
-                    x: [0, 5, -5, 0],
-                    y: [0, -5, 5, 0]
+                    x: [0, 6, -6, 0],
+                    y: [0, -6, 6, 0]
                   }}
-                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  transition={{ 
+                    duration: 7, 
+                    repeat: Infinity, 
+                    ease: [0.65, 0, 0.35, 1],
+                    delay: 1.5,
+                    repeatType: "reverse"
+                  }}
                 >
                   <GraduationCap size={22} weight="duotone" className="text-white" />
                 </motion.div>
@@ -193,9 +215,15 @@ function App() {
                 <motion.div
                   className="absolute bottom-12 -right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-[oklch(0.83_0.16_25)] to-[oklch(0.80_0.14_340)] shadow-md flex items-center justify-center z-10"
                   animate={{ 
-                    rotate: [0, -10, 10, 0]
+                    rotate: [0, -6, 6, 0]
                   }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
+                  transition={{ 
+                    duration: 5.5, 
+                    repeat: Infinity, 
+                    ease: [0.37, 0, 0.63, 1],
+                    delay: 1.2,
+                    repeatType: "reverse"
+                  }}
                 >
                   <ChatCircleDots size={28} weight="duotone" className="text-white" />
                 </motion.div>
