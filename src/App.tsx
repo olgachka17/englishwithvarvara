@@ -33,67 +33,66 @@ function App() {
           <div className="absolute bottom-20 left-1/3 w-36 h-36 bg-accent/30 rounded-full blur-3xl" />
         </div>
 
-        <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+        <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-6xl mx-auto"
           >
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  <Badge className="mb-4 bg-accent text-accent-foreground text-base px-4 py-1">
-                    <Sparkle className="inline mr-2" weight="fill" />
-                    10 лет опыта
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <motion.div
+                className="flex-1"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <Badge className="mb-4 bg-accent text-accent-foreground text-base px-4 py-1">
+                  <Sparkle className="inline mr-2" weight="fill" />
+                  10 лет опыта
+                </Badge>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
+                  Привет, будущий ученик ☺️
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
+                  Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу тебе полюбить английский!
+                </p>
+                <div className="flex flex-wrap gap-3 mb-8">
+                  <Badge variant="secondary" className="text-base px-4 py-2">
+                    <Star className="mr-2" weight="fill" />
+                    C1 уровень
                   </Badge>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
-                    Привет, будущий ученик ☺️
-                  </h1>
-                  <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
-                    Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу тебе полюбить английский!
-                  </p>
-                  <div className="flex flex-wrap gap-3 mb-8">
-                    <Badge variant="secondary" className="text-base px-4 py-2">
-                      <Star className="mr-2" weight="fill" />
-                      C1 уровень
-                    </Badge>
-                    <Badge variant="secondary" className="text-base px-4 py-2">
-                      <Globe className="mr-2" weight="fill" />
-                      Международный опыт
-                    </Badge>
-                    <Badge variant="secondary" className="text-base px-4 py-2">
-                      <Heart className="mr-2" weight="fill" />
-                      Весёлые уроки
-                    </Badge>
-                  </div>
-                  <Button 
-                    size="lg" 
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
-                    onClick={scrollToContact}
-                  >
-                    <Sparkle className="mr-2" weight="fill" />
-                    Записаться на пробный урок
-                  </Button>
-                </motion.div>
-              </div>
+                  <Badge variant="secondary" className="text-base px-4 py-2">
+                    <Globe className="mr-2" weight="fill" />
+                    Международный опыт
+                  </Badge>
+                  <Badge variant="secondary" className="text-base px-4 py-2">
+                    <Heart className="mr-2" weight="fill" />
+                    Весёлые уроки
+                  </Badge>
+                </div>
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
+                  onClick={scrollToContact}
+                >
+                  <Sparkle className="mr-2" weight="fill" />
+                  Записаться на пробный урок
+                </Button>
+              </motion.div>
 
               <motion.div 
-                className="order-1 md:order-2"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                className="w-full md:w-72 lg:w-80 flex-shrink-0"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
               >
                 <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl blur-2xl opacity-30" />
+                  <div className="absolute -inset-3 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-30" />
                   <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop&crop=faces" 
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=faces" 
                     alt="Варвара Ищенко" 
-                    className="relative rounded-3xl shadow-2xl w-full aspect-square object-cover border-4 border-white"
+                    className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-white"
                   />
                 </div>
               </motion.div>
