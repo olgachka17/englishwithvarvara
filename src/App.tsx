@@ -36,7 +36,7 @@ function App() {
       
       <div className="relative overflow-hidden">
 
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+        <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-wrap gap-3 mb-8 justify-center"
+              className="flex flex-wrap gap-3 mb-6 justify-center"
             >
               <Badge className="text-sm md:text-base px-6 py-2.5 bg-soft-pink text-soft-pink-foreground hover:bg-soft-pink/90 shadow-sm font-semibold border-0">
                 <Sparkle className="inline mr-2" weight="fill" />
@@ -71,7 +71,7 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
             >
               <span className="bg-gradient-to-r from-primary via-coral to-accent bg-clip-text text-transparent drop-shadow-sm">
                 Английский для взрослых 18+:
@@ -86,7 +86,7 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl mb-10 leading-relaxed max-w-4xl mx-auto text-foreground/70"
+              className="text-lg md:text-xl mb-8 leading-relaxed max-w-4xl mx-auto text-foreground/70"
             >
               Я <span className="font-bold text-accent">Варвара</span>, преподаю английский 10 лет и помогаю взрослым говорить уверенно для работы, переезда и путешествий 💖
             </motion.p>
@@ -104,7 +104,7 @@ function App() {
                 <Sparkle className="mr-3" weight="fill" size={24} />
                 Записаться на бесплатный пробный урок
               </Button>
-              <p className="text-base text-foreground/60 mt-4 font-medium">
+              <p className="text-sm text-foreground/60 mt-2 font-medium">
                 20 минут знакомства и персональный план обучения
               </p>
             </motion.div>
@@ -112,15 +112,15 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 max-w-6xl">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
             Немного обо мне 😊
           </h2>
           <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -247,12 +247,12 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
             Квалификация и опыт 🎓
           </h2>
-          <p className="text-center text-foreground/60 text-lg mb-10">
+          <p className="text-center text-foreground/60 text-lg mb-8">
             Профессиональное образование и международная практика
           </p>
 
@@ -306,12 +306,12 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
             Дипломы и сертификаты 📜
           </h2>
-          <p className="text-center text-foreground/60 text-lg mb-10">
+          <p className="text-center text-foreground/60 text-lg mb-8">
             Подтверждённая квалификация и достижения
           </p>
           <DocumentCarousel />
@@ -322,12 +322,12 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
             Моя методика 🎯
           </h2>
-          <p className="text-center text-foreground/60 text-lg mb-10 max-w-4xl mx-auto">
+          <p className="text-center text-foreground/60 text-lg mb-8 max-w-4xl mx-auto">
             Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
           </p>
 
@@ -441,12 +441,12 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
             Что говорят мои ученики 💬
           </h2>
-          <p className="text-center text-foreground/60 text-lg mb-10">
+          <p className="text-center text-foreground/60 text-lg mb-8">
             Реальные отзывы и истории успеха
           </p>
 
@@ -548,14 +548,14 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
           <div className="rounded-[3rem] p-2 bg-gradient-to-br from-peach via-soft-pink to-accent/20">
             <div className="rounded-[2.5rem] p-8 md:p-12 bg-white/95 backdrop-blur-sm">
-              <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+              <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
                 Платформы и специализация 💻
               </h2>
-              <p className="text-center text-foreground/60 text-lg mb-10">
+              <p className="text-center text-foreground/60 text-lg mb-8">
                 Современные инструменты и проверенные подходы
               </p>
 
@@ -625,12 +625,12 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
             Стоимость занятий 💰
           </h2>
-          <p className="text-center text-foreground/60 text-lg mb-10">
+          <p className="text-center text-foreground/60 text-lg mb-8">
             Прозрачные цены и бесплатный пробный урок
           </p>
 
@@ -709,14 +709,14 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-10"
         >
           <div className="rounded-[3rem] shadow-2xl p-2 bg-gradient-to-br from-coral via-accent to-soft-pink">
             <div className="bg-white rounded-[2.8rem] p-8 md:p-12">
-              <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
+              <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
                 Готов начать? 🚀
               </h2>
-              <p className="text-center text-foreground/60 text-lg mb-10">
+              <p className="text-center text-foreground/60 text-lg mb-8">
                 Свяжись со мной удобным способом и запишись на бесплатный пробный урок!
               </p>
 
