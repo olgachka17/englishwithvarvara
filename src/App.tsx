@@ -27,11 +27,11 @@ function App() {
 
   return (
     <div className="min-h-screen relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.99_0.008_60)] via-[oklch(0.98_0.02_50)] to-[oklch(0.96_0.03_340)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.99_0.012_40)] via-[oklch(0.98_0.025_35)] to-[oklch(0.97_0.04_320)]" />
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[oklch(0.75_0.18_345)] opacity-[0.08] rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[oklch(0.88_0.08_290)] opacity-[0.12] rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[oklch(0.94_0.06_50)] opacity-[0.15] rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[oklch(0.78_0.16_340)] opacity-[0.10] rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[oklch(0.90_0.10_310)] opacity-[0.14] rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[oklch(0.95_0.05_45)] opacity-[0.18] rounded-full blur-3xl" />
       </div>
       
       <div className="relative overflow-hidden">
@@ -417,7 +417,7 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={22} className="text-[oklch(0.88_0.15_50)]" />
+                      <Star key={i} weight="fill" size={22} className="text-[oklch(0.75_0.18_35)]" />
                     ))}
                   </div>
                   <p className="text-foreground/70 leading-relaxed mb-6 text-base">
@@ -447,7 +447,7 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={22} className="text-[oklch(0.88_0.15_50)]" />
+                      <Star key={i} weight="fill" size={22} className="text-[oklch(0.75_0.18_35)]" />
                     ))}
                   </div>
                   <p className="text-foreground/70 leading-relaxed mb-6 text-base">
@@ -709,7 +709,7 @@ function App() {
             © 2024 Варвара Ищенко. Преподаватель английского языка
           </p>
           <p className="text-base text-foreground/60">
-            Сделано с <Heart className="inline" weight="fill" size={18} style={{ color: 'oklch(0.72 0.19 20)' }} /> для моих будущих учеников
+            Сделано с <Heart className="inline" weight="fill" size={18} style={{ color: 'oklch(0.70 0.22 20)' }} /> для моих будущих учеников
           </p>
         </div>
       </footer>
