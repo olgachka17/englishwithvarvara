@@ -47,12 +47,19 @@ This is a single-page landing designed to present information about the tutor, h
 - **Progression**: Read testimonials → see 5-star ratings → notice specific results (exam success, level improvement) → trust increases → feel confident in choosing tutor
 - **Success criteria**: Three diverse testimonials visible, specific outcomes highlighted, authentic tone maintained, visually appealing cards
 
-### Teaching Approach Section
-- **Functionality**: Explain methodology (platforms used: Zoom, Progress Me, Kami), specializations (school/university exams, OGE, general level improvement, speaking focus), target audience (adults and teens 14+)
-- **Purpose**: Help visitors understand teaching style and whether it fits their needs
-- **Trigger**: User scrolling
+### Teaching Methodology Section (NEW - Adults 18+)
+- **Functionality**: Detailed explanation of teaching approach for adults - interactive lessons, conversation-focused, quality materials with custom additions, video/memes for retention, personalized format (conversational, grammar deep-dive, business/travel English), goal-setting and progress tracking
+- **Purpose**: Clearly communicate the unique value proposition and teaching philosophy for adult learners (18+) at any level (beginner to advanced)
+- **Trigger**: User scrolling after testimonials
+- **Progression**: Understand teaching is for adults → learn interactive approach → see use of modern materials → realize flexibility of format → feel confidence in methodology
+- **Success criteria**: Adult audience (18+) clearly stated, methodology benefits obvious, different learning goals addressed, conversational and practical focus emphasized
+
+### Teaching Approach Section (Platform & Logistics)
+- **Functionality**: Explain platforms used (Zoom, Progress Me, Kami), specializations (school/university exams, OGE, general level improvement, speaking focus), teaching principles (starting and ending with fun review)
+- **Purpose**: Help visitors understand practical details and teaching style
+- **Trigger**: User scrolling after methodology
 - **Progression**: Learn platforms → understand specializations → identify if they fit criteria → feel methodology resonates
-- **Success criteria**: Teaching style clearly communicated, platforms listed, target audience obvious
+- **Success criteria**: Teaching style clearly communicated, platforms listed, principles obvious
 
 ### Pricing Section
 - **Functionality**: Clear pricing display - Individual lessons (50-55 min, 1800₽, first 20-25 min free trial), Pair lessons (60-65 min, 1400₽)

@@ -49,7 +49,7 @@ function App() {
               Привет, будущий ученик ☺️
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
-              Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу тебе полюбить английский!
+              Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу вам полюбить английский!
             </p>
             <div className="flex flex-wrap gap-3 mb-8 justify-center">
               <Badge variant="secondary" className="text-base px-4 py-2">
@@ -62,7 +62,7 @@ function App() {
               </Badge>
               <Badge variant="secondary" className="text-base px-4 py-2">
                 <Heart className="mr-2" weight="fill" />
-                Весёлые уроки
+                Для взрослых 18+
               </Badge>
             </div>
             <Button 
@@ -209,6 +209,125 @@ function App() {
           className="mb-20"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Моя методика 🎯
+          </h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">
+            Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
+          </p>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            <Card className="p-8 md:p-10 shadow-xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5">
+              <CardContent className="p-0 space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-primary/15 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Student size={32} className="text-primary" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3 text-primary">Беру любой уровень</h3>
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      Можно прийти <span className="font-semibold text-foreground">"с нуля"</span>, можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
+                    </p>
+                  </div>
+                </div>
+
+                <Separator className="my-6" />
+
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-accent/15 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Chats size={32} className="text-accent" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3 text-accent">Живые и интерактивные уроки</h3>
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      Много общения, понятные объяснения и практика, которая сразу закрепляет материал. Использую качественные материалы платформы и добавляю свои задания под вашу цель.
+                    </p>
+                  </div>
+                </div>
+
+                <Separator className="my-6" />
+
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 bg-secondary/15 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Sparkle size={32} className="text-secondary" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3 text-secondary">Современные материалы</h3>
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      Иногда подключаю короткие видео и мемы по теме — не ради "развлечь", а чтобы новые слова и правила <span className="font-semibold text-foreground">запоминались быстрее и без ощущения зубрёжки</span>.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-all">
+                  <CardContent className="p-0 text-center space-y-3">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Chats size={32} className="text-primary" weight="fill" />
+                    </div>
+                    <h3 className="text-xl font-bold">Разговорный английский</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Для тех, кто хочет уверенно общаться и преодолеть языковой барьер
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-all">
+                  <CardContent className="p-0 text-center space-y-3">
+                    <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <GraduationCap size={32} className="text-accent" weight="fill" />
+                    </div>
+                    <h3 className="text-xl font-bold">Грамматика "по полочкам"</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Систематизируем знания и разбираем сложные темы понятным языком
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
+                <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-all">
+                  <CardContent className="p-0 text-center space-y-3">
+                    <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Globe size={32} className="text-secondary" weight="fill" />
+                    </div>
+                    <h3 className="text-xl font-bold">Для работы и путешествий</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Практический английский под конкретные цели и ситуации
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </div>
+
+            <Card className="p-8 shadow-lg bg-gradient-to-r from-accent/10 to-primary/10 border-2 border-accent/20">
+              <CardContent className="p-0">
+                <div className="flex items-start gap-4">
+                  <CheckCircle size={32} className="text-accent flex-shrink-0 mt-1" weight="fill" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Индивидуальный подход</h3>
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      На старте уточняем <span className="font-semibold text-foreground">цель и комфортный темп</span>, а дальше идём по плану и регулярно отмечаем прогресс.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-20"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Что говорят мои ученики 💬
           </h2>
           <p className="text-center text-muted-foreground text-lg mb-12">
@@ -287,11 +406,11 @@ function App() {
                 <CardContent className="p-0 relative z-10">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                      М
+                      Е
                     </div>
                     <div>
-                      <h3 className="font-bold">Мария & Елена</h3>
-                      <p className="text-sm text-muted-foreground">Подруги, 16 лет</p>
+                      <h3 className="font-bold">Елена</h3>
+                      <p className="text-sm text-muted-foreground">Менеджер проектов, 32 года</p>
                     </div>
                   </div>
                   <div className="flex gap-1 mb-3">
@@ -300,10 +419,10 @@ function App() {
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    "Ходим на парные занятия вместе — это очень весело! Варвара делает уроки интересными, и мы реально стали лучше понимать английский. Готовимся к ОГЭ вместе! 💪"
+                    "Начала заниматься после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
                   </p>
                   <Badge variant="secondary" className="text-xs">
-                    Готовятся к ОГЭ
+                    Вернулась к английскому после 8 лет
                   </Badge>
                 </CardContent>
               </Card>
@@ -320,10 +439,10 @@ function App() {
         >
           <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-              Как я работаю 🎯
+              Платформы и специализация 💻
             </h2>
             <p className="text-center text-muted-foreground text-lg mb-12">
-              Современные методы и индивидуальный подход
+              Современные инструменты и проверенные подходы
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -363,7 +482,7 @@ function App() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-2">Ученики</h3>
-                      <p className="text-muted-foreground">Работаю преимущественно со взрослыми и подростками 14+</p>
+                      <p className="text-muted-foreground">Работаю со взрослыми 18+</p>
                     </div>
                   </div>
                 </CardContent>
