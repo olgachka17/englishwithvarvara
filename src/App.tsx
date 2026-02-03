@@ -37,18 +37,8 @@ function App() {
       <div className="relative overflow-hidden">
 
         <div className="container mx-auto px-4 py-12 md:py-16 relative z-10">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-5xl mx-auto text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-wrap gap-2.5 mb-5 justify-center"
-            >
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="flex flex-wrap gap-2.5 mb-5 justify-center">
               <Badge className="text-sm md:text-base px-5 py-2 bg-sunny-yellow text-sunny-yellow-foreground hover:bg-sunny-yellow/90 shadow-md font-semibold border-0">
                 <Sparkle className="inline mr-2" weight="fill" size={18} />
                 10 лет преподавания
@@ -65,14 +55,9 @@ function App() {
                 <Heart className="mr-2" weight="fill" size={18} />
                 Ученики 18+
               </Badge>
-            </motion.div>
+            </div>
             
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight"
-            >
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
               <span className="bg-gradient-to-r from-bright-magenta via-coral to-accent bg-clip-text text-transparent drop-shadow-sm">
                 Английский для взрослых 18+:
               </span>
@@ -80,22 +65,13 @@ function App() {
               <span className="text-foreground">
                 заговорите уверенно через несколько месяцев
               </span>
-            </motion.h1>
+            </h1>
             
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl mb-6 leading-relaxed max-w-4xl mx-auto text-foreground/70"
-            >
+            <p className="text-lg md:text-xl mb-6 leading-relaxed max-w-4xl mx-auto text-foreground/70">
               Я <span className="font-bold text-accent">Варвара</span>, преподаю английский 10 лет и помогаю взрослым говорить уверенно для работы, переезда и путешествий 💖
-            </motion.p>
+            </p>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
+            <div>
               <Button 
                 size="lg" 
                 className="text-base md:text-lg px-8 py-5 md:px-10 md:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 font-bold bg-coral text-white hover:bg-coral/90 border-0"
@@ -107,19 +83,13 @@ function App() {
               <p className="text-sm text-foreground/60 mt-2 font-medium">
                 20 минут знакомства и персональный план обучения
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-6 max-w-6xl">
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Немного обо мне 😊
           </h2>
@@ -143,12 +113,7 @@ function App() {
                 </p>
               </CardContent>
             </Card>
-            <motion.div 
-              className="w-full md:w-64 flex-shrink-0"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-            >
+            <div className="w-full md:w-64 flex-shrink-0">
               <div className="relative group">
                 <div className="absolute -inset-2.5 bg-gradient-to-br from-[oklch(0.95_0.08_30)] via-[oklch(0.92_0.10_20)] to-[oklch(0.88_0.10_15)] rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity" />
                 
@@ -238,17 +203,11 @@ function App() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Квалификация и опыт 🎓
           </h2>
@@ -257,57 +216,45 @@ function App() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mb-3 shadow-lg">
-                    <GraduationCap size={28} className="text-white" weight="fill" />
-                  </div>
-                  <h3 className="text-lg font-bold">Образование</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Высшее лингвистическое образование СПбГПУ, обучение в аспирантуре. Факультет Иностранных языков.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0 space-y-2.5">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mb-3 shadow-lg">
+                  <GraduationCap size={28} className="text-white" weight="fill" />
+                </div>
+                <h3 className="text-lg font-bold">Образование</h3>
+                <p className="text-foreground/70 leading-relaxed text-sm">
+                  Высшее лингвистическое образование СПбГПУ, обучение в аспирантуре. Факультет Иностранных языков.
+                </p>
+              </CardContent>
+            </Card>
 
-            <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mb-3 shadow-lg">
-                    <Globe size={28} className="text-white" weight="fill" />
-                  </div>
-                  <h3 className="text-lg font-bold">Международный опыт</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Работа в детском саду в Китае, стажировка в Шотландии, сданный международный экзамен.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0 space-y-2.5">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mb-3 shadow-lg">
+                  <Globe size={28} className="text-white" weight="fill" />
+                </div>
+                <h3 className="text-lg font-bold">Международный опыт</h3>
+                <p className="text-foreground/70 leading-relaxed text-sm">
+                  Работа в детском саду в Китае, стажировка в Шотландии, сданный международный экзамен.
+                </p>
+              </CardContent>
+            </Card>
 
-            <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0 space-y-2.5">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mb-3 shadow-lg">
-                    <Student size={28} className="text-white" weight="fill" />
-                  </div>
-                  <h3 className="text-lg font-bold">Практика</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Преподаватель в СПбГПУ с 2019 года. Работа на различных специальностях, составление планов уроков.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0 space-y-2.5">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mb-3 shadow-lg">
+                  <Student size={28} className="text-white" weight="fill" />
+                </div>
+                <h3 className="text-lg font-bold">Практика</h3>
+                <p className="text-foreground/70 leading-relaxed text-sm">
+                  Преподаватель в СПбГПУ с 2019 года. Работа на различных специальностях, составление планов уроков.
+                </p>
+              </CardContent>
+            </Card>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Дипломы и сертификаты 📜
           </h2>
@@ -315,15 +262,9 @@ function App() {
             Подтверждённая квалификация и достижения
           </p>
           <DocumentCarousel />
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Моя методика 🎯
           </h2>
@@ -377,47 +318,41 @@ function App() {
             </Card>
 
             <div className="grid md:grid-cols-3 gap-5">
-              <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
-                      <Chats size={26} className="text-white" weight="fill" />
-                    </div>
-                    <h3 className="text-base font-bold">Разговорный английский</h3>
-                    <p className="text-foreground/70 leading-relaxed text-sm">
-                      Для тех, кто хочет уверенно общаться и преодолеть языковой барьер
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
+              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-0 text-center space-y-2.5">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <Chats size={26} className="text-white" weight="fill" />
+                  </div>
+                  <h3 className="text-base font-bold">Разговорный английский</h3>
+                  <p className="text-foreground/70 leading-relaxed text-sm">
+                    Для тех, кто хочет уверенно общаться и преодолеть языковой барьер
+                  </p>
+                </CardContent>
+              </Card>
 
-              <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sunny-yellow to-orange flex items-center justify-center mx-auto mb-3 shadow-lg">
-                      <GraduationCap size={26} className="text-white" weight="fill" />
-                    </div>
-                    <h3 className="text-base font-bold">Грамматика "по полочкам"</h3>
-                    <p className="text-foreground/70 leading-relaxed text-sm">
-                      Систематизируем знания и разбираем сложные темы понятным языком
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
+              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-0 text-center space-y-2.5">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sunny-yellow to-orange flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <GraduationCap size={26} className="text-white" weight="fill" />
+                  </div>
+                  <h3 className="text-base font-bold">Грамматика "по полочкам"</h3>
+                  <p className="text-foreground/70 leading-relaxed text-sm">
+                    Систематизируем знания и разбираем сложные темы понятным языком
+                  </p>
+                </CardContent>
+              </Card>
 
-              <motion.div whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-0 text-center space-y-2.5">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
-                      <Globe size={26} className="text-white" weight="fill" />
-                    </div>
-                    <h3 className="text-base font-bold">Для работы и путешествий</h3>
-                    <p className="text-foreground/70 leading-relaxed text-sm">
-                      Практический английский под конкретные цели и ситуации
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
+              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-0 text-center space-y-2.5">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <Globe size={26} className="text-white" weight="fill" />
+                  </div>
+                  <h3 className="text-base font-bold">Для работы и путешествий</h3>
+                  <p className="text-foreground/70 leading-relaxed text-sm">
+                    Практический английский под конкретные цели и ситуации
+                  </p>
+                </CardContent>
+              </Card>
             </div>
 
             <Card className="p-6 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
@@ -434,15 +369,9 @@ function App() {
               </CardContent>
             </Card>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Что говорят мои ученики 💬
           </h2>
@@ -451,105 +380,84 @@ function App() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-5">
-            <motion.div
-              whileHover={{ y: -6, scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                      А
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base">Анастасия</h3>
-                      <p className="text-xs text-foreground/60">Студентка, 19 лет</p>
-                    </div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    А
                   </div>
-                  <div className="flex gap-1 mb-2.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
-                    ))}
+                  <div>
+                    <h3 className="font-bold text-base">Анастасия</h3>
+                    <p className="text-xs text-foreground/60">Студентка, 19 лет</p>
                   </div>
-                  <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
-                    "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
-                  </p>
-                  <Badge className="text-xs bg-bright-magenta text-white font-semibold border-0 shadow-sm">
-                    Сдала экзамен на 5
-                  </Badge>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+                <div className="flex gap-1 mb-2.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
+                  ))}
+                </div>
+                <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
+                  "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
+                </p>
+                <Badge className="text-xs bg-bright-magenta text-white font-semibold border-0 shadow-sm">
+                  Сдала экзамен на 5
+                </Badge>
+              </CardContent>
+            </Card>
 
-            <motion.div
-              whileHover={{ y: -6, scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                      Д
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base">Дмитрий</h3>
-                      <p className="text-xs text-foreground/60">IT-специалист, 28 лет</p>
-                    </div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    Д
                   </div>
-                  <div className="flex gap-1 mb-2.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
-                    ))}
+                  <div>
+                    <h3 className="font-bold text-base">Дмитрий</h3>
+                    <p className="text-xs text-foreground/60">IT-специалист, 28 лет</p>
                   </div>
-                  <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
-                    "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
-                  </p>
-                  <Badge className="text-xs bg-turquoise text-white font-semibold border-0 shadow-sm">
-                    Повысил уровень до B2+
-                  </Badge>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+                <div className="flex gap-1 mb-2.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
+                  ))}
+                </div>
+                <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
+                  "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
+                </p>
+                <Badge className="text-xs bg-turquoise text-white font-semibold border-0 shadow-sm">
+                  Повысил уровень до B2+
+                </Badge>
+              </CardContent>
+            </Card>
 
-            <motion.div
-              whileHover={{ y: -6, scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
-                <CardContent className="p-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                      Е
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-base">Елена</h3>
-                      <p className="text-xs text-foreground/60">Менеджер проектов, 32 года</p>
-                    </div>
+            <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    Е
                   </div>
-                  <div className="flex gap-1 mb-2.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
-                    ))}
+                  <div>
+                    <h3 className="font-bold text-base">Елена</h3>
+                    <p className="text-xs text-foreground/60">Менеджер проектов, 32 года</p>
                   </div>
-                  <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
-                    "Начала после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
-                  </p>
-                  <Badge className="text-xs bg-orange text-white font-semibold border-0 shadow-sm">
-                    Вернулась к английскому после 8 лет
-                  </Badge>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+                <div className="flex gap-1 mb-2.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} weight="fill" size={18} className="text-sunny-yellow" />
+                  ))}
+                </div>
+                <p className="text-foreground/70 leading-relaxed mb-3 text-sm">
+                  "Начала после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
+                </p>
+                <Badge className="text-xs bg-orange text-white font-semibold border-0 shadow-sm">
+                  Вернулась к английскому после 8 лет
+                </Badge>
+              </CardContent>
+            </Card>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-turquoise to-bright-magenta">
             <div className="rounded-[2.25rem] p-6 md:p-10 bg-white/95 backdrop-blur-sm">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
@@ -618,15 +526,9 @@ function App() {
               </div>
             </div>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             Стоимость занятий 💰
           </h2>
@@ -635,82 +537,71 @@ function App() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            <motion.div whileHover={{ scale: 1.02, y: -4 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-bright-magenta to-accent opacity-10 rounded-full blur-3xl" />
-                <CardContent className="p-0 relative">
-                  <Badge className="mb-3 bg-bright-magenta text-white font-bold text-xs border-0 shadow-md">
-                    Популярный выбор
-                  </Badge>
-                  <h3 className="text-xl font-bold mb-4">Индивидуальные занятия</h3>
-                  <div className="mb-5">
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span className="text-4xl font-bold bg-gradient-to-r from-bright-magenta to-accent bg-clip-text text-transparent">1800₽</span>
-                      <span className="text-foreground/60 text-base font-semibold">/урок</span>
-                    </div>
+            <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-bright-magenta to-accent opacity-10 rounded-full blur-3xl" />
+              <CardContent className="p-0 relative">
+                <Badge className="mb-3 bg-bright-magenta text-white font-bold text-xs border-0 shadow-md">
+                  Популярный выбор
+                </Badge>
+                <h3 className="text-xl font-bold mb-4">Индивидуальные занятия</h3>
+                <div className="mb-5">
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-bright-magenta to-accent bg-clip-text text-transparent">1800₽</span>
+                    <span className="text-foreground/60 text-base font-semibold">/урок</span>
                   </div>
-                  <Separator className="my-4" />
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2.5">
-                      <Clock size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
-                      <span className="text-sm font-medium">50-55 минут личного внимания</span>
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <Sparkle size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
-                      <span className="font-bold text-sm text-bright-magenta">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
-                      <span className="text-sm font-medium">Программа под ваши цели</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+                <Separator className="my-4" />
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2.5">
+                    <Clock size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
+                    <span className="text-sm font-medium">50-55 минут личного внимания</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <Sparkle size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
+                    <span className="font-bold text-sm text-bright-magenta">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-bright-magenta" weight="fill" />
+                    <span className="text-sm font-medium">Программа под ваши цели</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
 
-            <motion.div whileHover={{ scale: 1.02, y: -4 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-turquoise to-lavender opacity-10 rounded-full blur-3xl" />
-                <CardContent className="p-0 relative">
-                  <Badge className="mb-3 bg-turquoise text-white font-bold text-xs border-0 shadow-md">
-                    Выгодное предложение
-                  </Badge>
-                  <h3 className="text-xl font-bold mb-4">Парные занятия</h3>
-                  <div className="mb-5">
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span className="text-4xl font-bold bg-gradient-to-r from-turquoise to-lavender bg-clip-text text-transparent">1400₽</span>
-                      <span className="text-foreground/60 text-base font-semibold">/урок</span>
-                    </div>
+            <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-br from-turquoise to-lavender opacity-10 rounded-full blur-3xl" />
+              <CardContent className="p-0 relative">
+                <Badge className="mb-3 bg-turquoise text-white font-bold text-xs border-0 shadow-md">
+                  Выгодное предложение
+                </Badge>
+                <h3 className="text-xl font-bold mb-4">Парные занятия</h3>
+                <div className="mb-5">
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-turquoise to-lavender bg-clip-text text-transparent">1400₽</span>
+                    <span className="text-foreground/60 text-base font-semibold">/урок</span>
                   </div>
-                  <Separator className="my-4" />
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2.5">
-                      <Clock size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
-                      <span className="text-sm font-medium">60-65 минут в паре с другом</span>
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <Chats size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
-                      <span className="text-sm font-medium">Больше практики общения</span>
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
-                      <span className="text-sm font-medium">Экономия + весёлая атмосфера</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+                <Separator className="my-4" />
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2.5">
+                    <Clock size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
+                    <span className="text-sm font-medium">60-65 минут в паре с другом</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <Chats size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
+                    <span className="text-sm font-medium">Больше практики общения</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-turquoise" weight="fill" />
+                    <span className="text-sm font-medium">Экономия + весёлая атмосфера</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          id="contact"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
+        <section id="contact" className="mb-8">
           <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
             <div className="bg-white rounded-[2.25rem] p-6 md:p-10">
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
@@ -721,99 +612,85 @@ function App() {
               </p>
 
               <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-6">
-                <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-bright-magenta/10">
-                    <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
-                        <Phone size={26} className="text-white" weight="fill" />
-                      </div>
-                      <h3 className="font-bold mb-1.5 text-base">Телефон</h3>
-                      <a href="tel:+79502274443" className="text-sm font-semibold text-bright-magenta hover:opacity-80 transition-colors">
-                        +7 (950) 227-44-43
-                      </a>
-                    </CardContent>
-                  </Card>
-                </motion.div>
+                <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-bright-magenta/10">
+                  <CardContent className="p-0">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <Phone size={26} className="text-white" weight="fill" />
+                    </div>
+                    <h3 className="font-bold mb-1.5 text-base">Телефон</h3>
+                    <a href="tel:+79502274443" className="text-sm font-semibold text-bright-magenta hover:opacity-80 transition-colors">
+                      +7 (950) 227-44-43
+                    </a>
+                  </CardContent>
+                </Card>
 
-                <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-turquoise/10">
-                    <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
-                        <EnvelopeSimple size={26} className="text-white" weight="fill" />
-                      </div>
-                      <h3 className="font-bold mb-1.5 text-base">Email</h3>
-                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-turquoise hover:opacity-80 transition-colors">
-                        varvara.ishenko@gmail.com
-                      </a>
-                    </CardContent>
-                  </Card>
-                </motion.div>
+                <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-turquoise/10">
+                  <CardContent className="p-0">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquoise to-lavender flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <EnvelopeSimple size={26} className="text-white" weight="fill" />
+                    </div>
+                    <h3 className="font-bold mb-1.5 text-base">Email</h3>
+                    <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-turquoise hover:opacity-80 transition-colors">
+                      varvara.ishenko@gmail.com
+                    </a>
+                  </CardContent>
+                </Card>
 
-                <motion.div whileHover={{ y: -4, scale: 1.03 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-orange/10">
-                    <CardContent className="p-0">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mx-auto mb-3 shadow-lg">
-                        <MapPin size={26} className="text-white" weight="fill" />
-                      </div>
-                      <h3 className="font-bold mb-1.5 text-base">Локация</h3>
-                      <p className="text-foreground/70 font-semibold text-sm">
-                        Санкт-Петербург<br />
-                        (онлайн уроки)
-                      </p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
+                <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-orange/10">
+                  <CardContent className="p-0">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-orange to-sunny-yellow flex items-center justify-center mx-auto mb-3 shadow-lg">
+                      <MapPin size={26} className="text-white" weight="fill" />
+                    </div>
+                    <h3 className="font-bold mb-1.5 text-base">Локация</h3>
+                    <p className="text-foreground/70 font-semibold text-sm">
+                      Санкт-Петербург<br />
+                      (онлайн уроки)
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
 
               <div className="text-center">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button 
-                    size="lg" 
-                    className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold bg-gradient-to-r from-bright-magenta to-soft-pink text-white hover:opacity-90 border-0"
-                    asChild
-                  >
-                    <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
-                      <Sparkle className="mr-2.5" weight="fill" size={22} />
-                      Написать в WhatsApp
-                    </a>
-                  </Button>
-                </motion.div>
+                <Button 
+                  size="lg" 
+                  className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold bg-gradient-to-r from-bright-magenta to-soft-pink text-white hover:opacity-90 border-0"
+                  asChild
+                >
+                  <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
+                    <Sparkle className="mr-2.5" weight="fill" size={22} />
+                    Написать в WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
-        </motion.section>
+        </section>
       </div>
 
       <footer className="relative py-10 bg-white/60 backdrop-blur-sm border-t border-border/40">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <div className="flex justify-center gap-6 mb-5">
-              <motion.a 
+              <a 
                 href="tel:+79502274443"
                 className="text-foreground/60 hover:text-bright-magenta transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
               >
                 <Phone size={24} weight="fill" />
-              </motion.a>
-              <motion.a 
+              </a>
+              <a 
                 href="mailto:varvara.ishenko@gmail.com"
                 className="text-foreground/60 hover:text-turquoise transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
               >
                 <EnvelopeSimple size={24} weight="fill" />
-              </motion.a>
-              <motion.a 
+              </a>
+              <a 
                 href="https://wa.me/79502274443"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-orange transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
               >
                 <ChatCircleDots size={24} weight="fill" />
-              </motion.a>
+              </a>
             </div>
             
             <Separator className="max-w-xs mx-auto" />
