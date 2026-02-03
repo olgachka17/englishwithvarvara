@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { DocumentCarousel } from '@/components/DocumentCarousel'
+import { Navigation } from '@/components/Navigation'
 import { 
   GraduationCap, 
   Globe, 
@@ -21,9 +22,17 @@ import {
 
 function App() {
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'hero') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+      return
+    }
+
     const element = document.getElementById(sectionId)
     if (element) {
-      const offset = 80
+      const offset = 100
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
       const offsetPosition = elementPosition - offset
 
@@ -38,6 +47,8 @@ function App() {
 
   return (
     <div className="min-h-screen relative">
+      <Navigation onNavigate={scrollToSection} />
+      
       <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.98_0.02_85)] via-[oklch(0.96_0.08_340)] to-[oklch(0.95_0.10_30)]" />
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[oklch(0.70_0.18_200)] opacity-[0.15] rounded-full blur-3xl" />
@@ -45,7 +56,7 @@ function App() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[oklch(0.72_0.22_50)] opacity-[0.20] rounded-full blur-3xl" />
       </div>
       
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden pt-20" id="hero">
 
         <div className="container mx-auto px-4 py-12 md:py-16 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
