@@ -26,11 +26,11 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-background">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
+    <div className="min-h-screen bg-gradient-to-br from-[oklch(0.99_0.01_45)] via-[oklch(0.98_0.02_35)] to-[oklch(0.96_0.025_40)]">
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 opacity-15">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-[oklch(0.85_0.12_35)] rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-20 w-80 h-80 bg-[oklch(0.88_0.08_40)] rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
@@ -46,19 +46,19 @@ function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex flex-wrap gap-3 mb-6 justify-center"
             >
-              <Badge className="text-sm md:text-base px-5 py-2 bg-primary text-primary-foreground hover:bg-primary/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
                 <Sparkle className="inline mr-2" weight="fill" />
                 10 лет преподавания
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-accent text-accent-foreground hover:bg-accent/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
                 <Star className="mr-2" weight="fill" />
                 C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-white hover:bg-secondary/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
                 <Globe className="mr-2" weight="fill" />
                 Международный опыт
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-highlight-pink text-white hover:opacity-90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
                 <Heart className="mr-2" weight="fill" />
                 Ученики 18+
               </Badge>
@@ -70,7 +70,7 @@ function App() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
                 Английский для взрослых 18+:
               </span>
               <br />
@@ -85,7 +85,7 @@ function App() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto text-muted-foreground"
             >
-              Я <span className="font-bold text-primary">Варвара</span>, преподаю английский 10 лет и помогаю взрослым заговорить уверенно для работы, переезда и путешествий 💖
+              Я <span className="font-bold text-accent">Варвара</span>, преподаю английский 10 лет и помогаю взрослым заговорить уверенно для работы, переезда и путешествий 💖
             </motion.p>
             
             <motion.div
@@ -95,7 +95,7 @@ function App() {
             >
               <Button 
                 size="lg" 
-                className="text-lg md:text-xl px-10 py-6 md:px-12 md:py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 font-bold"
+                className="text-lg md:text-xl px-10 py-6 md:px-12 md:py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 font-bold bg-primary hover:bg-primary/90"
                 onClick={scrollToContact}
               >
                 <Sparkle className="mr-3" weight="fill" size={24} />
@@ -127,15 +127,15 @@ function App() {
                   Работаю преподавателем английского уже <span className="font-bold text-primary">10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
                 </p>
                 <p>
-                  Мой текущий уровень — <span className="font-bold text-accent">C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
+                  Мой текущий уровень — <span className="font-bold text-primary">C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
                 </p>
                 <p>
                   У меня высшее лингвистическое образование и обучение в аспирантуре, что было не так-то просто 😅
                 </p>
                 <p>
-                  Есть международный опыт работы в <span className="font-semibold text-secondary">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-secondary">Шотландии</span> 🌍
+                  Есть международный опыт работы в <span className="font-semibold text-accent">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-accent">Шотландии</span> 🌍
                 </p>
-                <p className="text-xl font-semibold pt-4 text-primary">
+                <p className="text-xl font-semibold pt-4 text-accent">
                   Ещё говорят, что я весёлая! 😂
                 </p>
               </CardContent>
@@ -147,7 +147,7 @@ function App() {
               transition={{ delay: 0.3 }}
             >
               <div className="relative">
-                <div className="absolute -inset-2 bg-gradient-to-br from-primary via-accent to-secondary rounded-3xl blur-xl opacity-30" />
+                <div className="absolute -inset-2 bg-gradient-to-br from-primary via-accent to-primary rounded-3xl blur-xl opacity-30" />
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=350&fit=crop&crop=faces" 
                   alt="Варвара Ищенко" 
@@ -188,10 +188,10 @@ function App() {
             </motion.div>
 
             <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
                 <CardContent className="p-0 space-y-3">
-                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-4">
-                    <Globe size={32} className="text-secondary" weight="fill" />
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Globe size={32} className="text-primary" weight="fill" />
                   </div>
                   <h3 className="text-xl font-bold">Международный опыт</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -265,11 +265,11 @@ function App() {
                 <Separator className="my-6" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                    <Chats size={36} className="text-secondary" weight="fill" />
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Chats size={36} className="text-primary" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3 text-secondary">Живые и интерактивные уроки</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-primary">Живые и интерактивные уроки</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
                       Много общения, понятные объяснения и практика, которая сразу закрепляет материал. Использую качественные материалы платформы и добавляю свои задания под вашу цель.
                     </p>
@@ -308,10 +308,10 @@ function App() {
               </motion.div>
 
               <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
+                <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
                   <CardContent className="p-0 text-center space-y-3">
-                    <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                      <GraduationCap size={32} className="text-secondary" weight="fill" />
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                      <GraduationCap size={32} className="text-primary" weight="fill" />
                     </div>
                     <h3 className="text-xl font-bold">Грамматика "по полочкам"</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -336,10 +336,10 @@ function App() {
               </motion.div>
             </div>
 
-            <Card className="p-8 shadow-lg border-2 border-secondary/20">
+            <Card className="p-8 shadow-lg border-2 border-primary/20">
               <CardContent className="p-0">
                 <div className="flex items-start gap-4">
-                  <CheckCircle size={36} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
+                  <CheckCircle size={36} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Индивидуальный подход</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
@@ -384,7 +384,7 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
+                      <Star key={i} weight="fill" size={20} className="text-[oklch(0.88_0.15_70)]" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
@@ -401,10 +401,10 @@ function App() {
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       Д
                     </div>
                     <div>
@@ -414,13 +414,13 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
+                      <Star key={i} weight="fill" size={20} className="text-[oklch(0.88_0.15_70)]" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
                   </p>
-                  <Badge className="text-xs bg-secondary text-white">
+                  <Badge className="text-xs bg-primary text-primary-foreground">
                     Повысил уровень до B2+
                   </Badge>
                 </CardContent>
@@ -434,7 +434,7 @@ function App() {
               <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-accent/20">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-highlight-pink flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       Е
                     </div>
                     <div>
@@ -444,7 +444,7 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
+                      <Star key={i} weight="fill" size={20} className="text-[oklch(0.88_0.15_70)]" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
@@ -466,7 +466,7 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <div className="rounded-3xl p-8 md:p-12 bg-gradient-to-br from-primary/5 to-secondary/5">
+          <div className="rounded-3xl p-8 md:p-12 bg-gradient-to-br from-[oklch(0.98_0.02_35)] to-[oklch(0.96_0.025_40)]">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
               Платформы и специализация 💻
             </h2>
@@ -492,8 +492,8 @@ function App() {
               <Card className="p-6 shadow-md">
                 <CardContent className="p-0">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <CheckCircle size={24} className="text-secondary" weight="fill" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <CheckCircle size={24} className="text-primary" weight="fill" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-2">Специализация</h3>
@@ -569,8 +569,8 @@ function App() {
                       <span className="text-lg">50-55 минут личного внимания</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <Sparkle size={24} className="flex-shrink-0 mt-1 text-accent" weight="fill" />
-                      <span className="font-bold text-lg text-accent">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
+                      <Sparkle size={24} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
+                      <span className="font-bold text-lg text-primary">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle size={24} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
@@ -582,30 +582,30 @@ function App() {
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all">
+              <Card className="h-full p-8 shadow-lg border-2 border-accent hover:shadow-xl transition-all">
                 <CardContent className="p-0">
-                  <Badge className="mb-4 bg-secondary text-white">
+                  <Badge className="mb-4 bg-accent text-accent-foreground">
                     Выгодное предложение
                   </Badge>
                   <h3 className="text-2xl font-bold mb-4">Парные занятия</h3>
                   <div className="mb-6">
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold text-secondary">1400₽</span>
+                      <span className="text-5xl font-bold text-accent">1400₽</span>
                       <span className="text-muted-foreground text-lg">/урок</span>
                     </div>
                   </div>
                   <Separator className="my-6" />
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <Clock size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
+                      <Clock size={24} className="flex-shrink-0 mt-1 text-accent" weight="fill" />
                       <span className="text-lg">60-65 минут в паре с другом</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <Chats size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
+                      <Chats size={24} className="flex-shrink-0 mt-1 text-accent" weight="fill" />
                       <span className="text-lg">Больше практики общения</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
+                      <CheckCircle size={24} className="flex-shrink-0 mt-1 text-accent" weight="fill" />
                       <span className="text-lg">Экономия + весёлая атмосфера</span>
                     </li>
                   </ul>
@@ -623,7 +623,7 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <div className="rounded-3xl shadow-2xl p-2 bg-gradient-to-br from-primary via-accent to-secondary">
+          <div className="rounded-3xl shadow-2xl p-2 bg-gradient-to-br from-primary via-accent to-primary">
             <div className="bg-card rounded-[22px] p-8 md:p-12">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                 Готов начать? 🚀
@@ -648,13 +648,13 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-secondary/20">
+                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-accent/20">
                     <CardContent className="p-0">
-                      <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                        <EnvelopeSimple size={32} className="text-secondary" weight="fill" />
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <EnvelopeSimple size={32} className="text-accent" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-2 text-lg">Email</h3>
-                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-sm font-medium text-secondary hover:opacity-80 transition-colors">
+                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-sm font-medium text-accent hover:opacity-80 transition-colors">
                         varvara.ishenko@gmail.com
                       </a>
                     </CardContent>
@@ -662,10 +662,10 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-accent/20">
+                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-primary/20">
                     <CardContent className="p-0">
-                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                        <MapPin size={32} className="text-accent" weight="fill" />
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <MapPin size={32} className="text-primary" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-2 text-lg">Локация</h3>
                       <p className="text-muted-foreground font-medium">
@@ -681,7 +681,7 @@ function App() {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button 
                     size="lg" 
-                    className="text-xl px-12 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold"
+                    className="text-xl px-12 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold bg-primary hover:bg-primary/90"
                     asChild
                   >
                     <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
@@ -696,13 +696,13 @@ function App() {
         </motion.section>
       </div>
 
-      <footer className="py-12 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <footer className="py-12 bg-gradient-to-br from-[oklch(0.98_0.02_35)] to-[oklch(0.96_0.025_40)]">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground mb-4">
             © 2024 Варвара Ищенко. Преподаватель английского языка
           </p>
           <p className="text-sm text-muted-foreground">
-            Сделано с <Heart className="inline" weight="fill" size={16} style={{ color: 'var(--primary)' }} /> для моих будущих учеников
+            Сделано с <Heart className="inline" weight="fill" size={16} style={{ color: 'oklch(0.68 0.20 25)' }} /> для моих будущих учеников
           </p>
         </div>
       </footer>
