@@ -191,6 +191,116 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Что говорят мои ученики 💬
+          </h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">
+            Реальные отзывы и истории успеха
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <motion.div
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-full -mr-12 -mt-12" />
+                <CardContent className="p-0 relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
+                      А
+                    </div>
+                    <div>
+                      <h3 className="font-bold">Анастасия</h3>
+                      <p className="text-sm text-muted-foreground">Студентка, 19 лет</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} weight="fill" className="text-accent" size={20} />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
+                  </p>
+                  <Badge variant="secondary" className="text-xs">
+                    Сдала экзамен на 5
+                  </Badge>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full -mr-12 -mt-12" />
+                <CardContent className="p-0 relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
+                      Д
+                    </div>
+                    <div>
+                      <h3 className="font-bold">Дмитрий</h3>
+                      <p className="text-sm text-muted-foreground">IT-специалист, 28 лет</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} weight="fill" className="text-accent" size={20} />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
+                  </p>
+                  <Badge variant="secondary" className="text-xs">
+                    Повысил уровень до B2+
+                  </Badge>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="h-full p-6 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-full -mr-12 -mt-12" />
+                <CardContent className="p-0 relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg">
+                      М
+                    </div>
+                    <div>
+                      <h3 className="font-bold">Мария & Елена</h3>
+                      <p className="text-sm text-muted-foreground">Подруги, 16 лет</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} weight="fill" className="text-accent" size={20} />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    "Ходим на парные занятия вместе — это очень весело! Варвара делает уроки интересными, и мы реально стали лучше понимать английский. Готовимся к ОГЭ вместе! 💪"
+                  </p>
+                  <Badge variant="secondary" className="text-xs">
+                    Готовятся к ОГЭ
+                  </Badge>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-20"
+        >
           <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
               Как я работаю 🎯

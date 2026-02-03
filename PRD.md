@@ -33,6 +33,13 @@ This is a single-page landing designed to present information about the tutor, h
 - **Progression**: See credentials → notice international experience → recognize qualifications → trust grows
 - **Success criteria**: Information clear and scannable, icons enhance readability
 
+### Student Testimonials Section
+- **Functionality**: Display authentic student reviews and success stories with names, roles, ratings, and specific achievements
+- **Purpose**: Build social proof and trust through real student experiences and outcomes
+- **Trigger**: User scrolling after qualifications section
+- **Progression**: Read testimonials → see 5-star ratings → notice specific results (exam success, level improvement) → trust increases → feel confident in choosing tutor
+- **Success criteria**: Three diverse testimonials visible, specific outcomes highlighted, authentic tone maintained, visually appealing cards
+
 ### Teaching Approach Section
 - **Functionality**: Explain methodology (platforms used: Zoom, Progress Me, Kami), specializations (school/university exams, OGE, general level improvement, speaking focus), target audience (adults and teens 14+)
 - **Purpose**: Help visitors understand teaching style and whether it fits their needs
