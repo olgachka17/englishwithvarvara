@@ -54,7 +54,7 @@ function App() {
                 <Star className="mr-2" weight="fill" />
                 C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-white hover:bg-secondary/90">
                 <Globe className="mr-2" weight="fill" />
                 Международный опыт
               </Badge>
@@ -420,7 +420,7 @@ function App() {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
                   </p>
-                  <Badge className="text-xs bg-secondary text-secondary-foreground">
+                  <Badge className="text-xs bg-secondary text-white">
                     Повысил уровень до B2+
                   </Badge>
                 </CardContent>
@@ -584,7 +584,7 @@ function App() {
             <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
               <Card className="h-full p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all">
                 <CardContent className="p-0">
-                  <Badge className="mb-4 bg-secondary text-secondary-foreground">
+                  <Badge className="mb-4 bg-secondary text-white">
                     Выгодное предложение
                   </Badge>
                   <h3 className="text-2xl font-bold mb-4">Парные занятия</h3>

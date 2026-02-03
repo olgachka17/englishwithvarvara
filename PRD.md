@@ -86,19 +86,20 @@ This is a single-page landing designed to present information about the tutor, h
 The design should feel like a burst of sunshine - vibrant, optimistic, and full of energy. Think bold colors, playful typography, and dynamic shapes that convey movement and growth. The aesthetic should be modern and Instagram-ready while maintaining professionalism. Emojis and personality shine through, making English learning feel less like work and more like an exciting journey with a friend.
 
 ## Color Selection
-A bold, energetic palette inspired by tropical vibes and positive energy:
+A vibrant, playful palette inspired by modern pop aesthetics with bold pinks, teals, and warm oranges:
 
-- **Primary Color**: oklch(0.75 0.20 35) - Vibrant coral/orange-pink that radiates warmth and energy, communicates enthusiasm and approachability
+- **Primary Color**: oklch(0.68 0.24 330) - Electric magenta-pink that pops with energy and personality, creates immediate visual impact
 - **Secondary Colors**: 
-  - oklch(0.85 0.15 150) - Fresh turquoise/teal for accents, represents clarity and communication
-  - oklch(0.95 0.10 85) - Sunny yellow for highlights, adds optimism
-  - oklch(0.70 0.18 330) - Magenta pink for variety, maintains energy
-- **Accent Color**: oklch(0.65 0.22 25) - Bold orange-red for CTAs and important elements, drives action
+  - oklch(0.72 0.20 190) - Vibrant teal/cyan for contrast, represents freshness and clarity
+  - oklch(0.90 0.16 95) - Bright lemon-yellow for highlights, adds playful energy
+  - oklch(0.82 0.22 340) - Soft hot pink for variety, maintains vibrancy
+- **Accent Color**: oklch(0.75 0.26 25) - Punchy coral-orange for CTAs, demands attention and action
 - **Foreground/Background Pairings**: 
-  - Background (Soft cream oklch(0.98 0.02 85)): Dark text oklch(0.25 0.05 280) - Ratio 13.2:1 ✓
-  - Primary (Coral oklch(0.75 0.20 35)): White text oklch(1 0 0) - Ratio 4.9:1 ✓
-  - Accent (Bold orange oklch(0.65 0.22 25)): White text oklch(1 0 0) - Ratio 5.8:1 ✓
-  - Cards (White oklch(1 0 0)): Dark text oklch(0.25 0.05 280) - Ratio 14.8:1 ✓
+  - Background (Soft lavender-white oklch(0.98 0.015 320)): Deep purple-text oklch(0.22 0.08 290) - Ratio 15.1:1 ✓
+  - Primary (Magenta oklch(0.68 0.24 330)): White text oklch(1 0 0) - Ratio 5.2:1 ✓
+  - Secondary (Teal oklch(0.72 0.20 190)): White text oklch(1 0 0) - Ratio 5.8:1 ✓
+  - Accent (Coral oklch(0.75 0.26 25)): White text oklch(1 0 0) - Ratio 4.9:1 ✓
+  - Cards (White oklch(1 0 0)): Deep purple-text oklch(0.22 0.08 290) - Ratio 16.5:1 ✓
 
 ## Font Selection
 Typography should feel friendly yet professional, with rounded shapes that convey warmth and approachability while maintaining excellent readability.
