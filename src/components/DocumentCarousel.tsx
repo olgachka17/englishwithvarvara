@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -68,16 +67,10 @@ export function DocumentCarousel() {
         <div className="overflow-hidden">
           <div className="flex gap-6 justify-center items-center px-4">
             {getVisibleDocs().map((doc, idx) => (
-              <motion.div
+              <div
                 key={`${doc.id}-${currentIndex}`}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ 
-                  opacity: idx === 1 ? 1 : 0.6, 
-                  scale: idx === 1 ? 1 : 0.88,
-                }}
-                transition={{ duration: 0.3 }}
-                className={`flex-shrink-0 ${idx === 1 ? 'z-10' : 'z-0'}`}
-                style={{ width: idx === 1 ? '340px' : '300px' }}
+                className={`flex-shrink-0 transition-all ${idx === 1 ? 'z-10 opacity-100' : 'z-0 opacity-60'}`}
+                style={{ width: idx === 1 ? '340px' : '300px', transform: idx === 1 ? 'scale(1)' : 'scale(0.88)' }}
               >
                 <Card 
                   className={`overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer border-0 ${
@@ -99,11 +92,7 @@ export function DocumentCarousel() {
                         </Badge>
                       </div>
                       {idx === 1 && (
-                        <motion.div
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8 opacity-0 hover:opacity-100 transition-opacity"
-                        >
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-8 opacity-0 hover:opacity-100 transition-opacity">
                           <div className="flex gap-3">
                             <Button
                               size="sm"
@@ -113,7 +102,7 @@ export function DocumentCarousel() {
                               Просмотр
                             </Button>
                           </div>
-                        </motion.div>
+                        </div>
                       )}
                     </div>
                     <div className="p-5 bg-white">
@@ -122,7 +111,7 @@ export function DocumentCarousel() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

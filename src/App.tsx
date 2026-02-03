@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -132,81 +131,25 @@ function App() {
               <div className="relative group">
                 <div className="absolute -inset-2.5 bg-gradient-to-br from-[oklch(0.95_0.08_30)] via-[oklch(0.92_0.10_20)] to-[oklch(0.88_0.10_15)] rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity" />
                 
-                <motion.div
-                  className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink shadow-lg flex items-center justify-center z-10"
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ 
-                    duration: 4.5, 
-                    repeat: Infinity, 
-                    ease: [0.45, 0.05, 0.55, 0.95],
-                    repeatType: "reverse"
-                  }}
-                >
+                <div className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-gradient-to-br from-bright-magenta to-soft-pink shadow-lg flex items-center justify-center z-10">
                   <Sparkle size={30} weight="duotone" className="text-white" />
-                </motion.div>
+                </div>
                 
-                <motion.div
-                  className="absolute -bottom-5 -left-5 w-14 h-14 rounded-full bg-gradient-to-br from-coral to-primary shadow-md flex items-center justify-center z-10"
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ 
-                    duration: 5, 
-                    repeat: Infinity, 
-                    ease: [0.42, 0, 0.58, 1],
-                    delay: 0.8,
-                    repeatType: "reverse"
-                  }}
-                >
+                <div className="absolute -bottom-5 -left-5 w-14 h-14 rounded-full bg-gradient-to-br from-coral to-primary shadow-md flex items-center justify-center z-10">
                   <Heart size={24} weight="duotone" className="text-white" />
-                </motion.div>
+                </div>
                 
-                <motion.div
-                  className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-gradient-to-br from-sunny-yellow to-orange shadow-md flex items-center justify-center z-10"
-                  animate={{ 
-                    rotate: [0, 8, -8, 0],
-                    scale: [1, 1.05, 1]
-                  }}
-                  transition={{ 
-                    duration: 6, 
-                    repeat: Infinity, 
-                    ease: [0.43, 0.13, 0.23, 0.96],
-                    repeatType: "reverse"
-                  }}
-                >
+                <div className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-gradient-to-br from-sunny-yellow to-orange shadow-md flex items-center justify-center z-10">
                   <Star size={20} weight="duotone" className="text-white" />
-                </motion.div>
+                </div>
                 
-                <motion.div
-                  className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-turquoise to-lavender shadow-sm flex items-center justify-center z-10"
-                  animate={{ 
-                    x: [0, 5, -5, 0],
-                    y: [0, -5, 5, 0]
-                  }}
-                  transition={{ 
-                    duration: 7, 
-                    repeat: Infinity, 
-                    ease: [0.65, 0, 0.35, 1],
-                    delay: 1.5,
-                    repeatType: "reverse"
-                  }}
-                >
+                <div className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-turquoise to-lavender shadow-sm flex items-center justify-center z-10">
                   <GraduationCap size={18} weight="duotone" className="text-white" />
-                </motion.div>
+                </div>
                 
-                <motion.div
-                  className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow shadow-md flex items-center justify-center z-10"
-                  animate={{ 
-                    rotate: [0, -6, 6, 0]
-                  }}
-                  transition={{ 
-                    duration: 5.5, 
-                    repeat: Infinity, 
-                    ease: [0.37, 0, 0.63, 1],
-                    delay: 1.2,
-                    repeatType: "reverse"
-                  }}
-                >
+                <div className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange to-sunny-yellow shadow-md flex items-center justify-center z-10">
                   <ChatCircleDots size={24} weight="duotone" className="text-white" />
-                </motion.div>
+                </div>
                 
                 <div className="relative p-2 bg-gradient-to-br from-bright-magenta via-soft-pink to-orange rounded-full shadow-2xl">
                   <div className="p-1.5 bg-white rounded-full">
