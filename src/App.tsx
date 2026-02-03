@@ -102,9 +102,12 @@ function App() {
 
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <section id="about" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Немного обо мне 😊
           </h2>
+          <p className="text-center text-foreground/60 text-base mb-8">
+            Моя история и путь в преподавании
+          </p>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <Card className="flex-1 p-6 md:p-8 shadow-xl border-0 bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-shadow">
               <CardContent className="space-y-3.5 text-base leading-relaxed p-0">
@@ -220,10 +223,10 @@ function App() {
         </section>
 
         <section id="qualifications" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Квалификация и опыт 🎓
           </h2>
-          <p className="text-center text-foreground/60 text-base mb-6">
+          <p className="text-center text-foreground/60 text-base mb-8">
             Профессиональное образование и международная практика
           </p>
 
@@ -267,20 +270,20 @@ function App() {
         </section>
 
         <section id="certificates" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Дипломы и сертификаты 📜
           </h2>
-          <p className="text-center text-foreground/60 text-base mb-6">
+          <p className="text-center text-foreground/60 text-base mb-8">
             Подтверждённая квалификация и достижения
           </p>
           <DocumentCarousel />
         </section>
 
         <section id="methodology" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Моя методика 🎯
           </h2>
-          <p className="text-center text-foreground/60 text-base mb-6 max-w-4xl mx-auto">
+          <p className="text-center text-foreground/60 text-base mb-8 max-w-4xl mx-auto">
             Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
           </p>
 
@@ -384,10 +387,10 @@ function App() {
         </section>
 
         <section id="testimonials" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Что говорят мои ученики 💬
           </h2>
-          <p className="text-center text-foreground/60 text-base mb-6">
+          <p className="text-center text-foreground/60 text-base mb-8">
             Реальные отзывы и истории успеха
           </p>
 
@@ -470,14 +473,16 @@ function App() {
         </section>
 
         <section id="platforms" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
+              Платформы и специализация 💻
+            </h2>
+            <p className="text-foreground/60 text-base">
+              Современные инструменты и проверенные подходы
+            </p>
+          </div>
           <div className="rounded-[2.5rem] p-1.5 bg-gradient-to-br from-sunny-yellow via-turquoise to-bright-magenta">
             <div className="rounded-[2.25rem] p-6 md:p-10 bg-white/95 backdrop-blur-sm">
-              <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-                Платформы и специализация 💻
-              </h2>
-              <p className="text-center text-foreground/60 text-base mb-6">
-                Современные инструменты и проверенные подходы
-              </p>
 
               <div className="grid md:grid-cols-2 gap-5">
                 <Card className="p-5 shadow-lg border-0 bg-white">
@@ -541,10 +546,10 @@ function App() {
         </section>
 
         <section id="pricing" className="mb-16 scroll-mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
             Стоимость занятий 💰
           </h2>
-          <p className="text-center text-foreground/60 text-base mb-6">
+          <p className="text-center text-foreground/60 text-base mb-8">
             Прозрачные цены и бесплатный пробный урок
           </p>
 
@@ -614,14 +619,16 @@ function App() {
         </section>
 
         <section id="contact" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
+              Готов начать? 🚀
+            </h2>
+            <p className="text-foreground/60 text-base">
+              Свяжись со мной удобным способом и запишись на бесплатный пробный урок!
+            </p>
+          </div>
           <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
             <div className="bg-white rounded-[2.25rem] p-6 md:p-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-                Готов начать? 🚀
-              </h2>
-              <p className="text-center text-foreground/60 text-base mb-6">
-                Свяжись со мной удобным способом и запишись на бесплатный пробный урок!
-              </p>
 
               <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-6">
                 <Card className="p-5 text-center shadow-lg hover:shadow-xl transition-all border-0 bg-gradient-to-br from-white to-bright-magenta/10">
