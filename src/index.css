@@ -76,8 +76,8 @@
   --radius-2xl: calc(var(--radius) * 3);
   --radius-full: 9999px;
 
-  --font-heading: 'Quicksand', sans-serif;
-  --font-body: 'Nunito', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 @keyframes float {

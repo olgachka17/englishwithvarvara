@@ -102,18 +102,18 @@ A vibrant, playful palette inspired by modern pop aesthetics with bold pinks, te
   - Cards (White oklch(1 0 0)): Deep purple-text oklch(0.22 0.08 290) - Ratio 16.5:1 ✓
 
 ## Font Selection
-Typography should feel friendly yet professional, with rounded shapes that convey warmth and approachability while maintaining excellent readability.
+Typography should feel modern, sophisticated, and energetic while maintaining warmth and excellent readability.
 
-- **Primary Font**: Quicksand (Google Fonts) - Rounded, friendly sans-serif for headings that feels approachable
-- **Secondary Font**: Nunito (Google Fonts) - Clean, readable sans-serif for body text with warmth
+- **Primary Font**: Space Grotesk (Google Fonts) - Contemporary geometric sans-serif with distinctive character for headings that feels fresh and modern
+- **Secondary Font**: Plus Jakarta Sans (Google Fonts) - Clean, elegant sans-serif for body text with excellent readability and friendly warmth
 
 **Typographic Hierarchy**:
-- H1 (Main Name/Hero): Quicksand Bold/48px/tight tracking
-- H2 (Section Headers): Quicksand Bold/36px/normal tracking
-- H3 (Subsections): Quicksand SemiBold/24px/normal tracking
-- Body (Main content): Nunito Regular/18px/relaxed line-height (1.7)
-- Accent text (Highlights): Nunito Bold/18px/normal tracking
-- Small text (Details): Nunito Regular/16px/normal line-height
+- H1 (Main Name/Hero): Space Grotesk Bold/48px/tight tracking (-0.02em)
+- H2 (Section Headers): Space Grotesk Bold/36px/tight tracking (-0.02em)
+- H3 (Subsections): Space Grotesk SemiBold/24px/normal tracking
+- Body (Main content): Plus Jakarta Sans Regular/18px/relaxed line-height (1.7)
+- Accent text (Highlights): Plus Jakarta Sans Bold/18px/normal tracking
+- Small text (Details): Plus Jakarta Sans Regular/16px/normal line-height
 
 ## Animations
 Animations should feel playful and energetic without being distracting - like gentle bounces and smooth slides that guide attention and celebrate interactions. Use entrance animations for sections as they scroll into view (gentle fade-up), subtle hover effects on cards (slight lift and glow), and satisfying button interactions (scale + color shift). The overall feel should be lively but professional, with spring-based physics for natural movement.
