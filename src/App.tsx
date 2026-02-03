@@ -27,46 +27,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="relative overflow-hidden bg-gradient-to-br from-neon-pink/20 via-neon-purple/20 to-background">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 left-10 w-40 h-40 rounded-full blur-3xl animate-pulse" 
-            style={{ 
-              animationDuration: '4s',
-              background: 'radial-gradient(circle, var(--neon-pink) 0%, transparent 70%)',
-              boxShadow: '0 0 60px var(--neon-pink)'
-            }} />
-          <div className="absolute top-40 right-20 w-48 h-48 rounded-full blur-3xl animate-pulse" 
-            style={{ 
-              animationDuration: '5s', 
-              animationDelay: '1s',
-              background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)',
-              boxShadow: '0 0 60px var(--neon-purple)'
-            }} />
-          <div className="absolute bottom-20 left-1/3 w-44 h-44 rounded-full blur-3xl animate-pulse" 
-            style={{ 
-              animationDuration: '6s', 
-              animationDelay: '2s',
-              background: 'radial-gradient(circle, var(--neon-yellow) 0%, transparent 70%)',
-              boxShadow: '0 0 60px var(--neon-yellow)'
-            }} />
-          <div className="absolute top-1/2 right-1/4 w-32 h-32 rounded-full blur-2xl animate-pulse" 
-            style={{ 
-              animationDuration: '7s', 
-              animationDelay: '0.5s',
-              background: 'radial-gradient(circle, var(--neon-blue) 0%, transparent 70%)',
-              boxShadow: '0 0 60px var(--neon-blue)'
-            }} />
-        </div>
-
-        <div className="absolute top-10 right-10 w-32 h-32 disco-ball rounded-full opacity-40" 
-          style={{ animation: 'float 6s ease-in-out infinite' }} />
-        <div className="absolute bottom-20 right-20 w-24 h-24 disco-ball rounded-full opacity-30" 
-          style={{ animation: 'float 8s ease-in-out infinite', animationDelay: '1s' }} />
-
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, oklch(0.75 0.28 350 / 0.4) 35px, oklch(0.75 0.28 350 / 0.4) 36px)`
-          }} />
+      <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-background">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
@@ -82,41 +46,21 @@ function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex flex-wrap gap-3 mb-6 justify-center"
             >
-              <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-pink/30 relative overflow-hidden group" 
-                style={{ 
-                  background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                  boxShadow: '0 0 20px var(--neon-pink), 0 4px 15px rgba(0,0,0,0.2)'
-                }}>
-                <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                <Sparkle className="inline mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">10 лет опыта</span>
+              <Badge className="text-sm md:text-base px-5 py-2 bg-primary text-primary-foreground hover:bg-primary/90">
+                <Sparkle className="inline mr-2" weight="fill" />
+                10 лет преподавания
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-yellow/30 relative overflow-hidden group" 
-                style={{ 
-                  background: 'linear-gradient(135deg, var(--neon-yellow), var(--neon-pink))',
-                  boxShadow: '0 0 20px var(--neon-yellow), 0 4px 15px rgba(0,0,0,0.2)'
-                }}>
-                <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                <Star className="mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">C1 уровень</span>
+              <Badge className="text-sm md:text-base px-5 py-2 bg-accent text-accent-foreground hover:bg-accent/90">
+                <Star className="mr-2" weight="fill" />
+                C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-blue/30 relative overflow-hidden group" 
-                style={{ 
-                  background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                  boxShadow: '0 0 20px var(--neon-blue), 0 4px 15px rgba(0,0,0,0.2)'
-                }}>
-                <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                <Globe className="mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">Международный опыт</span>
+              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                <Globe className="mr-2" weight="fill" />
+                Международный опыт
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2.5 shadow-xl border-2 border-neon-purple/30 relative overflow-hidden group" 
-                style={{ 
-                  background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                  boxShadow: '0 0 20px var(--neon-purple), 0 4px 15px rgba(0,0,0,0.2)'
-                }}>
-                <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                <Heart className="mr-2 relative z-10" weight="fill" />
-                <span className="relative z-10 font-bold">Для взрослых 18+</span>
+              <Badge className="text-sm md:text-base px-5 py-2 bg-highlight-pink text-white hover:opacity-90">
+                <Heart className="mr-2" weight="fill" />
+                Ученики 18+
               </Badge>
             </motion.div>
             
@@ -124,24 +68,14 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              <span 
-                className="neon-text"
-                style={{ 
-                  background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  color: 'transparent',
-                  animation: 'disco-shimmer 4s ease-in-out infinite',
-                  backgroundSize: '200% 200%'
-                }}
-              >
-                Привет, будущий ученик!
+              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                Английский для взрослых 18+:
               </span>
               <br />
               <span className="text-foreground">
-                Полюби английский вместе со мной
+                без стеснения заговорите уже через несколько месяцев
               </span>
             </motion.h1>
             
@@ -149,14 +83,9 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-xl md:text-2xl lg:text-3xl mb-10 leading-relaxed max-w-4xl mx-auto"
-              style={{ color: 'var(--foreground)' }}
+              className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto text-muted-foreground"
             >
-              Меня зовут <span className="font-bold px-3 py-1 rounded-full" style={{ 
-                background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                color: 'white',
-                boxShadow: '0 0 15px var(--neon-pink)'
-              }}>Варвара</span>, и я помогу вам полюбить английский! 💖
+              Я <span className="font-bold text-primary">Варвара</span>, преподаю английский 10 лет и помогаю взрослым заговорить уверенно для работы, переезда и путешествий 💖
             </motion.p>
             
             <motion.div
@@ -166,20 +95,15 @@ function App() {
             >
               <Button 
                 size="lg" 
-                className="text-lg md:text-xl px-10 py-7 md:px-12 md:py-8 rounded-full shadow-2xl transition-all hover:scale-105 font-bold border-2 relative overflow-hidden group"
-                style={{
-                  background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-                  borderColor: 'var(--neon-pink)',
-                  boxShadow: '0 0 30px var(--neon-pink), 0 0 60px var(--neon-purple), 0 10px 40px rgba(0,0,0,0.3)',
-                  backgroundSize: '200% 200%',
-                  animation: 'disco-shimmer 3s ease-in-out infinite'
-                }}
+                className="text-lg md:text-xl px-10 py-6 md:px-12 md:py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 font-bold"
                 onClick={scrollToContact}
               >
-                <span className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
-                <Sparkle className="mr-3 relative z-10" weight="fill" size={28} />
-                <span className="relative z-10">Записаться на пробный урок</span>
+                <Sparkle className="mr-3" weight="fill" size={24} />
+                Записаться на бесплатный пробный урок
               </Button>
+              <p className="text-sm text-muted-foreground mt-3">
+                20 минут знакомства и персональный план обучения
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -197,47 +121,21 @@ function App() {
             Немного обо мне 😊
           </h2>
           <div className="flex flex-col md:flex-row gap-8 items-start">
-            <Card className="flex-1 p-8 md:p-10 shadow-2xl border-2 relative overflow-hidden" style={{
-              borderColor: 'var(--neon-pink)',
-              background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340))',
-              boxShadow: '0 0 40px var(--neon-pink), 0 20px 60px rgba(0,0,0,0.15)'
-            }}>
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full -mr-32 -mt-32 blur-3xl" style={{
-                background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-              }} />
-              <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full -ml-24 -mb-24 blur-3xl" style={{
-                background: 'radial-gradient(circle, var(--neon-blue) 0%, transparent 70%)'
-              }} />
-              <CardContent className="space-y-4 text-lg leading-relaxed p-0 relative z-10">
+            <Card className="flex-1 p-8 md:p-10 shadow-lg border-2 border-primary/10 hover:shadow-xl transition-shadow">
+              <CardContent className="space-y-4 text-lg leading-relaxed p-0">
                 <p>
-                  Работаю преподавателем английского уже <span className="font-bold px-2 py-1 rounded-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                    color: 'white',
-                    boxShadow: '0 0 10px var(--neon-pink)'
-                  }}>10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
+                  Работаю преподавателем английского уже <span className="font-bold text-primary">10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
                 </p>
                 <p>
-                  Мой текущий уровень — <span className="font-bold px-2 py-1 rounded-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-yellow), var(--neon-pink))',
-                    color: 'white',
-                    boxShadow: '0 0 10px var(--neon-yellow)'
-                  }}>C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
+                  Мой текущий уровень — <span className="font-bold text-accent">C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
                 </p>
                 <p>
                   У меня высшее лингвистическое образование и обучение в аспирантуре, что было не так-то просто 😅
                 </p>
                 <p>
-                  Есть международный опыт работы в <span className="font-semibold px-2 py-1 rounded-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                    color: 'white',
-                    boxShadow: '0 0 10px var(--neon-blue)'
-                  }}>Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold px-2 py-1 rounded-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                    color: 'white',
-                    boxShadow: '0 0 10px var(--neon-purple)'
-                  }}>Шотландии</span> 🌍
+                  Есть международный опыт работы в <span className="font-semibold text-secondary">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-secondary">Шотландии</span> 🌍
                 </p>
-                <p className="text-xl font-semibold pt-4" style={{ color: 'var(--neon-pink)' }}>
+                <p className="text-xl font-semibold pt-4 text-primary">
                   Ещё говорят, что я весёлая! 😂
                 </p>
               </CardContent>
@@ -249,24 +147,12 @@ function App() {
               transition={{ delay: 0.3 }}
             >
               <div className="relative">
-                <div className="absolute -inset-3 rounded-3xl blur-2xl opacity-60 animate-pulse" 
-                  style={{ 
-                    animationDuration: '3s',
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-                    boxShadow: '0 0 60px var(--neon-pink)'
-                  }} />
-                <div className="absolute -inset-1 rounded-3xl" style={{
-                  background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                  boxShadow: '0 0 30px var(--neon-pink)'
-                }} />
+                <div className="absolute -inset-2 bg-gradient-to-br from-primary via-accent to-secondary rounded-3xl blur-xl opacity-30" />
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=350&fit=crop&crop=faces" 
                   alt="Варвара Ищенко" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto object-cover border-4 border-white"
-                  style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}
                 />
-                <div className="absolute -bottom-2 -right-2 w-16 h-16 disco-ball rounded-full opacity-80" 
-                  style={{ animation: 'float 4s ease-in-out infinite' }} />
               </div>
             </motion.div>
           </div>
@@ -288,20 +174,10 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                borderColor: 'var(--neon-pink)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340))',
-                boxShadow: '0 0 20px var(--neon-pink), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-24 h-24 rounded-full -mr-12 -mt-12 blur-2xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-pink) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 space-y-3 relative z-10">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                    boxShadow: '0 0 20px var(--neon-pink)'
-                  }}>
-                    <GraduationCap size={32} className="text-white" weight="fill" />
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
+                <CardContent className="p-0 space-y-3">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
+                    <GraduationCap size={32} className="text-primary" weight="fill" />
                   </div>
                   <h3 className="text-xl font-bold">Образование</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -312,20 +188,10 @@ function App() {
             </motion.div>
 
             <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                borderColor: 'var(--neon-blue)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 260))',
-                boxShadow: '0 0 20px var(--neon-blue), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-24 h-24 rounded-full -mr-12 -mt-12 blur-2xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-blue) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 space-y-3 relative z-10">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                    boxShadow: '0 0 20px var(--neon-blue)'
-                  }}>
-                    <Globe size={32} className="text-white" weight="fill" />
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
+                <CardContent className="p-0 space-y-3">
+                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-4">
+                    <Globe size={32} className="text-secondary" weight="fill" />
                   </div>
                   <h3 className="text-xl font-bold">Международный опыт</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -336,20 +202,10 @@ function App() {
             </motion.div>
 
             <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                borderColor: 'var(--neon-purple)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 300))',
-                boxShadow: '0 0 20px var(--neon-purple), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-24 h-24 rounded-full -mr-12 -mt-12 blur-2xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 space-y-3 relative z-10">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                    boxShadow: '0 0 20px var(--neon-purple)'
-                  }}>
-                    <Student size={32} className="text-white" weight="fill" />
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-accent/20">
+                <CardContent className="p-0 space-y-3">
+                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-4">
+                    <Student size={32} className="text-accent" weight="fill" />
                   </div>
                   <h3 className="text-xl font-bold">Практика</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -392,30 +248,16 @@ function App() {
           </p>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            <Card className="p-8 md:p-10 shadow-2xl border-2 relative overflow-hidden" style={{
-              borderColor: 'var(--neon-pink)',
-              background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340), oklch(0.98 0.03 280))',
-              boxShadow: '0 0 40px var(--neon-pink), 0 20px 60px rgba(0,0,0,0.15)'
-            }}>
-              <div className="absolute inset-0 opacity-20" style={{
-                backgroundImage: `repeating-linear-gradient(90deg, transparent, transparent 40px, oklch(0.75 0.28 350 / 0.1) 40px, oklch(0.75 0.28 350 / 0.1) 41px)`
-              }} />
-              <CardContent className="p-0 space-y-6 relative z-10">
+            <Card className="p-8 md:p-10 shadow-lg border-2 border-primary/10">
+              <CardContent className="p-0 space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                    boxShadow: '0 0 20px var(--neon-pink)'
-                  }}>
-                    <Student size={36} className="text-white" weight="fill" />
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Student size={36} className="text-primary" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--neon-pink)' }}>Беру любой уровень</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-primary">Беру любой уровень</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
-                      Можно прийти <span className="font-semibold text-foreground px-2 py-1 rounded-lg" style={{ 
-                        background: 'linear-gradient(135deg, var(--neon-yellow), var(--neon-pink))',
-                        color: 'white',
-                        boxShadow: '0 0 10px var(--neon-yellow)'
-                      }}>"с нуля"</span>, можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
+                      Можно прийти <span className="font-semibold text-foreground">"с нуля"</span>, можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
                     </p>
                   </div>
                 </div>
@@ -423,14 +265,11 @@ function App() {
                 <Separator className="my-6" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-blue))',
-                    boxShadow: '0 0 20px var(--neon-purple)'
-                  }}>
-                    <Chats size={36} className="text-white" weight="fill" />
+                  <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                    <Chats size={36} className="text-secondary" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--neon-purple)' }}>Живые и интерактивные уроки</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-secondary">Живые и интерактивные уроки</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
                       Много общения, понятные объяснения и практика, которая сразу закрепляет материал. Использую качественные материалы платформы и добавляю свои задания под вашу цель.
                     </p>
@@ -440,20 +279,13 @@ function App() {
                 <Separator className="my-6" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg" style={{
-                    background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-pink))',
-                    boxShadow: '0 0 20px var(--neon-blue)'
-                  }}>
-                    <Sparkle size={36} className="text-white" weight="fill" />
+                  <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Sparkle size={36} className="text-accent" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--neon-blue)' }}>Современные материалы</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-accent">Современные материалы</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
-                      Иногда подключаю короткие видео и мемы по теме — не ради "развлечь", а чтобы новые слова и правила <span className="font-semibold text-foreground px-2 py-1 rounded-lg" style={{ 
-                        background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                        color: 'white',
-                        boxShadow: '0 0 10px var(--neon-blue)'
-                      }}>запоминались быстрее и без ощущения зубрёжки</span>.
+                      Иногда подключаю короткие видео и мемы по теме — не ради "развлечь", а чтобы новые слова и правила <span className="font-semibold text-foreground">запоминались быстрее и без ощущения зубрёжки</span>.
                     </p>
                   </div>
                 </div>
@@ -462,17 +294,10 @@ function App() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                  borderColor: 'var(--neon-pink)',
-                  background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340))',
-                  boxShadow: '0 0 20px var(--neon-pink), 0 10px 30px rgba(0,0,0,0.1)'
-                }}>
+                <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
                   <CardContent className="p-0 text-center space-y-3">
-                    <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                      boxShadow: '0 0 20px var(--neon-pink)'
-                    }}>
-                      <Chats size={32} className="text-white" weight="fill" />
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                      <Chats size={32} className="text-primary" weight="fill" />
                     </div>
                     <h3 className="text-xl font-bold">Разговорный английский</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -483,17 +308,10 @@ function App() {
               </motion.div>
 
               <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                  borderColor: 'var(--neon-purple)',
-                  background: 'linear-gradient(135deg, white, oklch(0.98 0.03 300))',
-                  boxShadow: '0 0 20px var(--neon-purple), 0 10px 30px rgba(0,0,0,0.1)'
-                }}>
+                <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
                   <CardContent className="p-0 text-center space-y-3">
-                    <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-blue))',
-                      boxShadow: '0 0 20px var(--neon-purple)'
-                    }}>
-                      <GraduationCap size={32} className="text-white" weight="fill" />
+                    <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+                      <GraduationCap size={32} className="text-secondary" weight="fill" />
                     </div>
                     <h3 className="text-xl font-bold">Грамматика "по полочкам"</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -504,17 +322,10 @@ function App() {
               </motion.div>
 
               <motion.div whileHover={{ y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all border-2 relative overflow-hidden" style={{
-                  borderColor: 'var(--neon-blue)',
-                  background: 'linear-gradient(135deg, white, oklch(0.98 0.03 260))',
-                  boxShadow: '0 0 20px var(--neon-blue), 0 10px 30px rgba(0,0,0,0.1)'
-                }}>
+                <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-accent/20">
                   <CardContent className="p-0 text-center space-y-3">
-                    <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-pink))',
-                      boxShadow: '0 0 20px var(--neon-blue)'
-                    }}>
-                      <Globe size={32} className="text-white" weight="fill" />
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Globe size={32} className="text-accent" weight="fill" />
                     </div>
                     <h3 className="text-xl font-bold">Для работы и путешествий</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -525,25 +336,14 @@ function App() {
               </motion.div>
             </div>
 
-            <Card className="p-8 shadow-2xl border-2 relative overflow-hidden" style={{
-              borderColor: 'var(--neon-purple)',
-              background: 'linear-gradient(135deg, oklch(0.98 0.03 340), oklch(0.98 0.03 280))',
-              boxShadow: '0 0 30px var(--neon-purple), 0 20px 50px rgba(0,0,0,0.15)'
-            }}>
-              <div className="absolute top-0 right-0 w-48 h-48 rounded-full -mr-24 -mt-24 blur-2xl" style={{
-                background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-              }} />
-              <CardContent className="p-0 relative z-10">
+            <Card className="p-8 shadow-lg border-2 border-secondary/20">
+              <CardContent className="p-0">
                 <div className="flex items-start gap-4">
-                  <CheckCircle size={36} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-purple)' }} />
+                  <CheckCircle size={36} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">Индивидуальный подход</h3>
                     <p className="text-lg leading-relaxed text-muted-foreground">
-                      На старте уточняем <span className="font-semibold text-foreground px-2 py-1 rounded-lg" style={{ 
-                        background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                        color: 'white',
-                        boxShadow: '0 0 10px var(--neon-purple)'
-                      }}>цель и комфортный темп</span>, а дальше идём по плану и регулярно отмечаем прогресс.
+                      На старте уточняем <span className="font-semibold text-foreground">цель и комфортный темп</span>, а дальше идём по плану и регулярно отмечаем прогресс.
                     </p>
                   </div>
                 </div>
@@ -571,20 +371,10 @@ function App() {
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all relative overflow-hidden border-2" style={{
-                borderColor: 'var(--neon-pink)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340))',
-                boxShadow: '0 0 20px var(--neon-pink), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-32 h-32 rounded-full -mr-16 -mt-16 blur-xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-pink) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 relative z-10">
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-primary/20">
+                <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                      boxShadow: '0 0 15px var(--neon-pink)'
-                    }}>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       А
                     </div>
                     <div>
@@ -594,17 +384,13 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} style={{ color: 'var(--neon-yellow)' }} />
+                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
                   </p>
-                  <Badge variant="secondary" className="text-xs border-2" style={{
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                    borderColor: 'var(--neon-pink)',
-                    color: 'white'
-                  }}>
+                  <Badge className="text-xs bg-primary text-primary-foreground">
                     Сдала экзамен на 5
                   </Badge>
                 </CardContent>
@@ -615,20 +401,10 @@ function App() {
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all relative overflow-hidden border-2" style={{
-                borderColor: 'var(--neon-blue)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 260))',
-                boxShadow: '0 0 20px var(--neon-blue), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-32 h-32 rounded-full -mr-16 -mt-16 blur-xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-blue) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 relative z-10">
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-secondary/20">
+                <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                      boxShadow: '0 0 15px var(--neon-blue)'
-                    }}>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       Д
                     </div>
                     <div>
@@ -638,17 +414,13 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} style={{ color: 'var(--neon-yellow)' }} />
+                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
                   </p>
-                  <Badge variant="secondary" className="text-xs border-2" style={{
-                    background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                    borderColor: 'var(--neon-blue)',
-                    color: 'white'
-                  }}>
+                  <Badge className="text-xs bg-secondary text-secondary-foreground">
                     Повысил уровень до B2+
                   </Badge>
                 </CardContent>
@@ -659,20 +431,10 @@ function App() {
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="h-full p-6 shadow-xl hover:shadow-2xl transition-all relative overflow-hidden border-2" style={{
-                borderColor: 'var(--neon-purple)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 300))',
-                boxShadow: '0 0 20px var(--neon-purple), 0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <div className="absolute top-0 right-0 w-32 h-32 rounded-full -mr-16 -mt-16 blur-xl" style={{
-                  background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 relative z-10">
+              <Card className="h-full p-6 shadow-md hover:shadow-xl transition-all border-2 border-accent/20">
+                <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg" style={{
-                      background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                      boxShadow: '0 0 15px var(--neon-purple)'
-                    }}>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-highlight-pink flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       Е
                     </div>
                     <div>
@@ -682,17 +444,13 @@ function App() {
                   </div>
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} weight="fill" size={20} style={{ color: 'var(--neon-yellow)' }} />
+                      <Star key={i} weight="fill" size={20} className="text-highlight-yellow" />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     "Начала заниматься после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
                   </p>
-                  <Badge variant="secondary" className="text-xs border-2" style={{
-                    background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-pink))',
-                    borderColor: 'var(--neon-purple)',
-                    color: 'white'
-                  }}>
+                  <Badge className="text-xs bg-accent text-accent-foreground">
                     Вернулась к английскому после 8 лет
                   </Badge>
                 </CardContent>
@@ -708,10 +466,7 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <div className="rounded-3xl p-8 md:p-12 relative overflow-hidden" style={{
-            background: 'linear-gradient(135deg, oklch(0.98 0.03 340), oklch(0.98 0.03 280), oklch(0.98 0.03 260))',
-            boxShadow: 'inset 0 0 60px var(--neon-pink), inset 0 0 80px var(--neon-purple)'
-          }}>
+          <div className="rounded-3xl p-8 md:p-12 bg-gradient-to-br from-primary/5 to-secondary/5">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
               Платформы и специализация 💻
             </h2>
@@ -795,53 +550,30 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-8 shadow-2xl border-4 relative overflow-hidden" style={{
-                borderColor: 'var(--neon-pink)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340), oklch(0.98 0.03 280))',
-                boxShadow: '0 0 40px var(--neon-pink), 0 0 60px var(--neon-purple), 0 20px 60px rgba(0,0,0,0.2)'
-              }}>
-                <div className="absolute top-0 right-0 w-40 h-40 rounded-full -mr-20 -mt-20 blur-2xl animate-pulse" style={{ 
-                  animationDuration: '3s',
-                  background: 'radial-gradient(circle, var(--neon-pink) 0%, transparent 70%)'
-                }} />
-                <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full -ml-16 -mb-16 blur-2xl animate-pulse" style={{ 
-                  animationDuration: '4s',
-                  animationDelay: '1s',
-                  background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 relative z-10">
-                  <Badge className="mb-4 shadow-lg border-2" style={{
-                    background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                    borderColor: 'var(--neon-pink)',
-                    color: 'white',
-                    boxShadow: '0 0 20px var(--neon-pink)'
-                  }}>
+              <Card className="h-full p-8 shadow-lg border-2 border-primary hover:shadow-xl transition-all">
+                <CardContent className="p-0">
+                  <Badge className="mb-4 bg-primary text-primary-foreground">
                     Популярный выбор
                   </Badge>
                   <h3 className="text-2xl font-bold mb-4">Индивидуальные занятия</h3>
                   <div className="mb-6">
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-6xl font-bold" style={{ 
-                        background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        color: 'transparent'
-                      }}>1800₽</span>
+                      <span className="text-5xl font-bold text-primary">1800₽</span>
                       <span className="text-muted-foreground text-lg">/урок</span>
                     </div>
                   </div>
                   <Separator className="my-6" />
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <Clock size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-pink)' }} />
+                      <Clock size={24} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
                       <span className="text-lg">50-55 минут личного внимания</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <Sparkle size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-yellow)' }} />
-                      <span className="font-bold text-lg" style={{ color: 'var(--neon-pink)' }}>Первое занятие 20-25 минут БЕСПЛАТНО!</span>
+                      <Sparkle size={24} className="flex-shrink-0 mt-1 text-accent" weight="fill" />
+                      <span className="font-bold text-lg text-accent">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-purple)' }} />
+                      <CheckCircle size={24} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
                       <span className="text-lg">Программа адаптирована под ваши цели</span>
                     </li>
                   </ul>
@@ -850,53 +582,30 @@ function App() {
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.03, y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="h-full p-8 shadow-2xl border-4 relative overflow-hidden" style={{
-                borderColor: 'var(--neon-blue)',
-                background: 'linear-gradient(135deg, white, oklch(0.98 0.03 260), oklch(0.98 0.03 300))',
-                boxShadow: '0 0 40px var(--neon-blue), 0 0 60px var(--neon-purple), 0 20px 60px rgba(0,0,0,0.2)'
-              }}>
-                <div className="absolute top-0 right-0 w-40 h-40 rounded-full -mr-20 -mt-20 blur-2xl animate-pulse" style={{ 
-                  animationDuration: '3s', 
-                  animationDelay: '1s',
-                  background: 'radial-gradient(circle, var(--neon-blue) 0%, transparent 70%)'
-                }} />
-                <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full -ml-16 -mb-16 blur-2xl animate-pulse" style={{ 
-                  animationDuration: '4s',
-                  background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-                }} />
-                <CardContent className="p-0 relative z-10">
-                  <Badge className="mb-4 shadow-lg border-2" style={{
-                    background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple))',
-                    borderColor: 'var(--neon-blue)',
-                    color: 'white',
-                    boxShadow: '0 0 20px var(--neon-blue)'
-                  }}>
+              <Card className="h-full p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all">
+                <CardContent className="p-0">
+                  <Badge className="mb-4 bg-secondary text-secondary-foreground">
                     Выгодное предложение
                   </Badge>
                   <h3 className="text-2xl font-bold mb-4">Парные занятия</h3>
                   <div className="mb-6">
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-6xl font-bold" style={{ 
-                        background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-purple), var(--neon-pink))',
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        color: 'transparent'
-                      }}>1400₽</span>
+                      <span className="text-5xl font-bold text-secondary">1400₽</span>
                       <span className="text-muted-foreground text-lg">/урок</span>
                     </div>
                   </div>
                   <Separator className="my-6" />
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <Clock size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-blue)' }} />
+                      <Clock size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
                       <span className="text-lg">60-65 минут в паре с другом</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <Chats size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-purple)' }} />
+                      <Chats size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
                       <span className="text-lg">Больше практики общения</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle size={28} className="flex-shrink-0 mt-1" weight="fill" style={{ color: 'var(--neon-pink)' }} />
+                      <CheckCircle size={24} className="flex-shrink-0 mt-1 text-secondary" weight="fill" />
                       <span className="text-lg">Экономия + весёлая атмосфера</span>
                     </li>
                   </ul>
@@ -914,24 +623,8 @@ function App() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <div className="relative overflow-hidden p-2 rounded-3xl shadow-2xl" style={{
-            background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-            boxShadow: '0 0 60px var(--neon-pink), 0 0 80px var(--neon-purple), 0 30px 80px rgba(0,0,0,0.3)',
-            backgroundSize: '200% 200%',
-            animation: 'disco-shimmer 6s ease-in-out infinite'
-          }}>
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute top-10 left-10 w-32 h-32 rounded-full blur-2xl animate-pulse" style={{ 
-                animationDuration: '4s',
-                background: 'radial-gradient(circle, white 0%, transparent 70%)'
-              }} />
-              <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full blur-2xl animate-pulse" style={{ 
-                animationDuration: '5s', 
-                animationDelay: '1s',
-                background: 'radial-gradient(circle, white 0%, transparent 70%)'
-              }} />
-            </div>
-            <div className="bg-card rounded-[22px] p-8 md:p-12 relative z-10">
+          <div className="rounded-3xl shadow-2xl p-2 bg-gradient-to-br from-primary via-accent to-secondary">
+            <div className="bg-card rounded-[22px] p-8 md:p-12">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                 Готов начать? 🚀
               </h2>
@@ -941,20 +634,13 @@ function App() {
 
               <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
                 <motion.div whileHover={{ y: -5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-6 text-center shadow-lg hover:shadow-xl transition-all border-2 relative overflow-hidden" style={{
-                    borderColor: 'var(--neon-pink)',
-                    background: 'linear-gradient(135deg, white, oklch(0.98 0.03 340))',
-                    boxShadow: '0 0 20px var(--neon-pink)'
-                  }}>
+                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-primary/20">
                     <CardContent className="p-0">
-                      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                        background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple))',
-                        boxShadow: '0 0 20px var(--neon-pink)'
-                      }}>
-                        <Phone size={32} className="text-white" weight="fill" />
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <Phone size={32} className="text-primary" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-2 text-lg">Телефон</h3>
-                      <a href="tel:+79502274443" className="text-lg font-medium transition-colors hover:opacity-80" style={{ color: 'var(--neon-pink)' }}>
+                      <a href="tel:+79502274443" className="text-lg font-medium text-primary hover:opacity-80 transition-colors">
                         +7 (950) 227-44-43
                       </a>
                     </CardContent>
@@ -962,20 +648,13 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-6 text-center shadow-lg hover:shadow-xl transition-all border-2 relative overflow-hidden" style={{
-                    borderColor: 'var(--neon-purple)',
-                    background: 'linear-gradient(135deg, white, oklch(0.98 0.03 300))',
-                    boxShadow: '0 0 20px var(--neon-purple)'
-                  }}>
+                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-secondary/20">
                     <CardContent className="p-0">
-                      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                        background: 'linear-gradient(135deg, var(--neon-purple), var(--neon-blue))',
-                        boxShadow: '0 0 20px var(--neon-purple)'
-                      }}>
-                        <EnvelopeSimple size={32} className="text-white" weight="fill" />
+                      <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+                        <EnvelopeSimple size={32} className="text-secondary" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-2 text-lg">Email</h3>
-                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-sm font-medium transition-colors hover:opacity-80" style={{ color: 'var(--neon-purple)' }}>
+                      <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-sm font-medium text-secondary hover:opacity-80 transition-colors">
                         varvara.ishenko@gmail.com
                       </a>
                     </CardContent>
@@ -983,17 +662,10 @@ function App() {
                 </motion.div>
 
                 <motion.div whileHover={{ y: -5, scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="p-6 text-center shadow-lg hover:shadow-xl transition-all border-2 relative overflow-hidden" style={{
-                    borderColor: 'var(--neon-blue)',
-                    background: 'linear-gradient(135deg, white, oklch(0.98 0.03 260))',
-                    boxShadow: '0 0 20px var(--neon-blue)'
-                  }}>
+                  <Card className="p-6 text-center shadow-md hover:shadow-lg transition-all border-2 border-accent/20">
                     <CardContent className="p-0">
-                      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{
-                        background: 'linear-gradient(135deg, var(--neon-blue), var(--neon-pink))',
-                        boxShadow: '0 0 20px var(--neon-blue)'
-                      }}>
-                        <MapPin size={32} className="text-white" weight="fill" />
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <MapPin size={32} className="text-accent" weight="fill" />
                       </div>
                       <h3 className="font-bold mb-2 text-lg">Локация</h3>
                       <p className="text-muted-foreground font-medium">
@@ -1009,20 +681,12 @@ function App() {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button 
                     size="lg" 
-                    className="text-xl px-12 py-8 rounded-full shadow-2xl transition-all font-bold border-2 relative overflow-hidden group"
-                    style={{
-                      background: 'linear-gradient(135deg, var(--neon-pink), var(--neon-purple), var(--neon-blue))',
-                      borderColor: 'white',
-                      boxShadow: '0 0 40px var(--neon-pink), 0 0 60px var(--neon-purple), 0 15px 50px rgba(0,0,0,0.4)',
-                      backgroundSize: '200% 200%',
-                      animation: 'disco-shimmer 3s ease-in-out infinite'
-                    }}
+                    className="text-xl px-12 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold"
                     asChild
                   >
                     <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
-                      <span className="absolute inset-0 bg-white/30 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
-                      <Sparkle className="mr-3 relative z-10" weight="fill" size={28} />
-                      <span className="relative z-10">Написать в WhatsApp</span>
+                      <Sparkle className="mr-3" weight="fill" size={24} />
+                      Написать в WhatsApp
                     </a>
                   </Button>
                 </motion.div>
@@ -1032,23 +696,13 @@ function App() {
         </motion.section>
       </div>
 
-      <footer className="py-12 relative overflow-hidden" style={{
-        background: 'linear-gradient(135deg, oklch(0.98 0.03 340), oklch(0.98 0.03 280), oklch(0.98 0.03 260))'
-      }}>
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-32 h-32 rounded-full blur-2xl" style={{
-            background: 'radial-gradient(circle, var(--neon-pink) 0%, transparent 70%)'
-          }} />
-          <div className="absolute bottom-0 right-1/4 w-32 h-32 rounded-full blur-2xl" style={{
-            background: 'radial-gradient(circle, var(--neon-purple) 0%, transparent 70%)'
-          }} />
-        </div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+      <footer className="py-12 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground mb-4">
             © 2024 Варвара Ищенко. Преподаватель английского языка
           </p>
           <p className="text-sm text-muted-foreground">
-            Сделано с <Heart className="inline" weight="fill" size={16} style={{ color: 'var(--neon-pink)' }} /> для моих будущих учеников
+            Сделано с <Heart className="inline" weight="fill" size={16} style={{ color: 'var(--primary)' }} /> для моих будущих учеников
           </p>
         </div>
       </footer>
