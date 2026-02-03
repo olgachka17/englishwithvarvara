@@ -151,6 +151,55 @@ function App() {
             >
               <div className="relative group">
                 <div className="absolute -inset-3 bg-gradient-to-br from-coral via-accent to-lavender rounded-full blur-3xl opacity-50 group-hover:opacity-70 transition-opacity animate-pulse" />
+                
+                <motion.div
+                  className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-coral to-accent shadow-xl flex items-center justify-center z-10"
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <Sparkle size={36} weight="fill" className="text-white" />
+                </motion.div>
+                
+                <motion.div
+                  className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-gradient-to-br from-lavender to-accent shadow-lg flex items-center justify-center z-10"
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                >
+                  <Heart size={28} weight="fill" className="text-white" />
+                </motion.div>
+                
+                <motion.div
+                  className="absolute top-8 -left-10 w-14 h-14 rounded-full bg-gradient-to-br from-accent to-primary shadow-lg flex items-center justify-center z-10"
+                  animate={{ 
+                    rotate: [0, 15, -15, 0],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <Star size={24} weight="fill" className="text-white" />
+                </motion.div>
+                
+                <motion.div
+                  className="absolute -top-4 left-12 w-12 h-12 rounded-full bg-gradient-to-br from-peach to-coral/60 shadow-md flex items-center justify-center z-10"
+                  animate={{ 
+                    x: [0, 5, -5, 0],
+                    y: [0, -5, 5, 0]
+                  }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                >
+                  <GraduationCap size={22} weight="fill" className="text-white" />
+                </motion.div>
+                
+                <motion.div
+                  className="absolute bottom-12 -right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-coral/80 to-accent shadow-lg flex items-center justify-center z-10"
+                  animate={{ 
+                    rotate: [0, -10, 10, 0]
+                  }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
+                >
+                  <ChatCircleDots size={28} weight="fill" className="text-white" />
+                </motion.div>
+                
                 <div className="relative p-2 bg-gradient-to-br from-coral via-accent to-lavender rounded-full shadow-2xl">
                   <div className="p-1.5 bg-white rounded-full">
                     <img 
