@@ -38,65 +38,40 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-6xl mx-auto"
+            className="max-w-4xl mx-auto text-center"
           >
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <motion.div
-                className="flex-1"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-              >
-                <Badge className="mb-4 bg-accent text-accent-foreground text-base px-4 py-1">
-                  <Sparkle className="inline mr-2" weight="fill" />
-                  10 лет опыта
-                </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
-                  Привет, будущий ученик ☺️
-                </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
-                  Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу тебе полюбить английский!
-                </p>
-                <div className="flex flex-wrap gap-3 mb-8">
-                  <Badge variant="secondary" className="text-base px-4 py-2">
-                    <Star className="mr-2" weight="fill" />
-                    C1 уровень
-                  </Badge>
-                  <Badge variant="secondary" className="text-base px-4 py-2">
-                    <Globe className="mr-2" weight="fill" />
-                    Международный опыт
-                  </Badge>
-                  <Badge variant="secondary" className="text-base px-4 py-2">
-                    <Heart className="mr-2" weight="fill" />
-                    Весёлые уроки
-                  </Badge>
-                </div>
-                <Button 
-                  size="lg" 
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
-                  onClick={scrollToContact}
-                >
-                  <Sparkle className="mr-2" weight="fill" />
-                  Записаться на пробный урок
-                </Button>
-              </motion.div>
-
-              <motion.div 
-                className="w-full md:w-72 lg:w-80 flex-shrink-0"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
-              >
-                <div className="relative">
-                  <div className="absolute -inset-3 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-30" />
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=faces" 
-                    alt="Варвара Ищенко" 
-                    className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-white"
-                  />
-                </div>
-              </motion.div>
+            <Badge className="mb-4 bg-accent text-accent-foreground text-base px-4 py-1">
+              <Sparkle className="inline mr-2" weight="fill" />
+              10 лет опыта
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
+              Привет, будущий ученик ☺️
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed">
+              Меня зовут <span className="font-bold text-primary">Варвара</span>, и я помогу тебе полюбить английский!
+            </p>
+            <div className="flex flex-wrap gap-3 mb-8 justify-center">
+              <Badge variant="secondary" className="text-base px-4 py-2">
+                <Star className="mr-2" weight="fill" />
+                C1 уровень
+              </Badge>
+              <Badge variant="secondary" className="text-base px-4 py-2">
+                <Globe className="mr-2" weight="fill" />
+                Международный опыт
+              </Badge>
+              <Badge variant="secondary" className="text-base px-4 py-2">
+                <Heart className="mr-2" weight="fill" />
+                Весёлые уроки
+              </Badge>
             </div>
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
+              onClick={scrollToContact}
+            >
+              <Sparkle className="mr-2" weight="fill" />
+              Записаться на пробный урок
+            </Button>
           </motion.div>
         </div>
       </div>
@@ -112,25 +87,42 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Немного обо мне 😊
           </h2>
-          <Card className="p-8 md:p-10 shadow-lg border-2">
-            <CardContent className="space-y-4 text-lg leading-relaxed p-0">
-              <p>
-                Работаю преподавателем английского уже <span className="font-bold text-primary">10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
-              </p>
-              <p>
-                Мой текущий уровень — <span className="font-bold text-accent">C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
-              </p>
-              <p>
-                У меня высшее лингвистическое образование и обучение в аспирантуре, что было не так-то просто 😅
-              </p>
-              <p>
-                Есть международный опыт работы в <span className="font-semibold text-secondary">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-secondary">Шотландии</span> 🌍
-              </p>
-              <p className="text-xl font-semibold text-primary pt-4">
-                Ещё говорят, что я весёлая! 😂
-              </p>
-            </CardContent>
-          </Card>
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <Card className="flex-1 p-8 md:p-10 shadow-lg border-2">
+              <CardContent className="space-y-4 text-lg leading-relaxed p-0">
+                <p>
+                  Работаю преподавателем английского уже <span className="font-bold text-primary">10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
+                </p>
+                <p>
+                  Мой текущий уровень — <span className="font-bold text-accent">C1</span>, но продолжаю заниматься сама и совершенствоваться. Учиться никогда не поздно! 📚
+                </p>
+                <p>
+                  У меня высшее лингвистическое образование и обучение в аспирантуре, что было не так-то просто 😅
+                </p>
+                <p>
+                  Есть международный опыт работы в <span className="font-semibold text-secondary">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-secondary">Шотландии</span> 🌍
+                </p>
+                <p className="text-xl font-semibold text-primary pt-4">
+                  Ещё говорят, что я весёлая! 😂
+                </p>
+              </CardContent>
+            </Card>
+            <motion.div 
+              className="w-full md:w-64 flex-shrink-0"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-lg opacity-25" />
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=350&fit=crop&crop=faces" 
+                  alt="Варвара Ищенко" 
+                  className="relative rounded-2xl shadow-xl w-full h-auto object-cover border-4 border-white"
+                />
+              </div>
+            </motion.div>
+          </div>
         </motion.section>
 
         <motion.section
