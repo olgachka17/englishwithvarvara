@@ -46,19 +46,19 @@ function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex flex-wrap gap-3 mb-6 justify-center"
             >
-              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-peach text-peach-foreground hover:bg-peach/90">
                 <Sparkle className="inline mr-2" weight="fill" />
                 10 лет преподавания
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-peach text-peach-foreground hover:bg-peach/90">
                 <Star className="mr-2" weight="fill" />
                 C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-peach text-peach-foreground hover:bg-peach/90">
                 <Globe className="mr-2" weight="fill" />
                 Международный опыт
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-mint text-mint-foreground hover:bg-mint/90">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-peach text-peach-foreground hover:bg-peach/90">
                 <Heart className="mr-2" weight="fill" />
                 Ученики 18+
               </Badge>

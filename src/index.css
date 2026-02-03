@@ -27,8 +27,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
 
-  --mint: oklch(0.93 0.08 155);
-  --mint-foreground: oklch(0.30 0.03 280);
+  --peach: oklch(0.90 0.08 45);
+  --peach-foreground: oklch(0.30 0.03 280);
 
   --border: oklch(0.92 0.02 45);
   --input: oklch(0.92 0.02 45);
@@ -58,8 +58,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --color-mint: var(--mint);
-  --color-mint-foreground: var(--mint-foreground);
+  --color-peach: var(--peach);
+  --color-peach-foreground: var(--peach-foreground);
 
   --radius-sm: calc(var(--radius) * 0.5);
   --radius-md: var(--radius);
