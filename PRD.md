@@ -33,6 +33,13 @@ This is a single-page landing designed to present information about the tutor, h
 - **Progression**: See credentials → notice international experience → recognize qualifications → trust grows
 - **Success criteria**: Information clear and scannable, icons enhance readability
 
+### Document Carousel (Diplomas & Certificates)
+- **Functionality**: Interactive carousel/slider displaying PDF documents (diplomas, certificates, credentials) with thumbnail previews
+- **Purpose**: Provide visual proof of qualifications and allow users to view/download official documents
+- **Trigger**: User scrolling after qualifications section
+- **Progression**: See carousel → navigate through documents → click to view full-size → download if desired → verify credentials
+- **Success criteria**: Smooth carousel navigation, documents clearly labeled, preview and download functionality working, mobile-friendly controls
+
 ### Student Testimonials Section
 - **Functionality**: Display authentic student reviews and success stories with names, roles, ratings, and specific achievements
 - **Purpose**: Build social proof and trust through real student experiences and outcomes
@@ -110,6 +117,8 @@ Animations should feel playful and energetic without being distracting - like ge
   - Badge component for highlighting key facts (C1 level, 10 years experience)
   - Separator for visual breaks between sections
   - Avatar component for professional photo display
+  - Carousel component (embla-carousel) for diplomas/certificates with custom styling
+  - Dialog component for full-screen document viewing
 - **Customizations**: 
   - Custom hero section with decorative background shapes/patterns (waves, dots, organic blobs)
   - Pricing cards with distinctive styling to stand out
@@ -127,6 +136,9 @@ Animations should feel playful and energetic without being distracting - like ge
   - ChatCircleDots for communication platforms
   - Sparkle/Star for fun personality touches
   - Phone/EnvelopeSimple for contact
+  - FilePdf for document badges
+  - CaretLeft/CaretRight for carousel navigation
+  - Eye/Download for document actions
 - **Spacing**: 
   - Section padding: py-16 md:py-24
   - Card padding: p-6 md:p-8

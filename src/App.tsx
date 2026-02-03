@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { DocumentCarousel } from '@/components/DocumentCarousel'
 import { 
   GraduationCap, 
   Globe, 
@@ -182,6 +183,22 @@ function App() {
               </Card>
             </motion.div>
           </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-20"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Дипломы и сертификаты 📜
+          </h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">
+            Подтверждённая квалификация и достижения
+          </p>
+          <DocumentCarousel />
         </motion.section>
 
         <motion.section
