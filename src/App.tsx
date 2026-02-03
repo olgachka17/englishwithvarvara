@@ -150,58 +150,58 @@ function App() {
               transition={{ delay: 0.3 }}
             >
               <div className="relative group">
-                <div className="absolute -inset-3 bg-gradient-to-br from-coral via-accent to-lavender rounded-full blur-3xl opacity-50 group-hover:opacity-70 transition-opacity animate-pulse" />
+                <div className="absolute -inset-3 bg-gradient-to-br from-[oklch(0.95_0.08_35)] via-[oklch(0.92_0.12_350)] to-[oklch(0.88_0.10_25)] rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity" />
                 
                 <motion.div
-                  className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-coral to-accent shadow-xl flex items-center justify-center z-10"
+                  className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-[oklch(0.85_0.18_25)] to-[oklch(0.82_0.15_340)] shadow-lg flex items-center justify-center z-10"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <Sparkle size={36} weight="fill" className="text-white" />
+                  <Sparkle size={36} weight="duotone" className="text-white" />
                 </motion.div>
                 
                 <motion.div
-                  className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-gradient-to-br from-lavender to-accent shadow-lg flex items-center justify-center z-10"
+                  className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-gradient-to-br from-[oklch(0.88_0.12_340)] to-[oklch(0.85_0.15_25)] shadow-md flex items-center justify-center z-10"
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 >
-                  <Heart size={28} weight="fill" className="text-white" />
+                  <Heart size={28} weight="duotone" className="text-white" />
                 </motion.div>
                 
                 <motion.div
-                  className="absolute top-8 -left-10 w-14 h-14 rounded-full bg-gradient-to-br from-accent to-primary shadow-lg flex items-center justify-center z-10"
+                  className="absolute top-8 -left-10 w-14 h-14 rounded-full bg-gradient-to-br from-[oklch(0.80_0.16_340)] to-[oklch(0.78_0.18_20)] shadow-md flex items-center justify-center z-10"
                   animate={{ 
                     rotate: [0, 15, -15, 0],
                     scale: [1, 1.1, 1]
                   }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <Star size={24} weight="fill" className="text-white" />
+                  <Star size={24} weight="duotone" className="text-white" />
                 </motion.div>
                 
                 <motion.div
-                  className="absolute -top-4 left-12 w-12 h-12 rounded-full bg-gradient-to-br from-peach to-coral/60 shadow-md flex items-center justify-center z-10"
+                  className="absolute -top-4 left-12 w-12 h-12 rounded-full bg-gradient-to-br from-[oklch(0.92_0.06_40)] to-[oklch(0.85_0.14_30)] shadow-sm flex items-center justify-center z-10"
                   animate={{ 
                     x: [0, 5, -5, 0],
                     y: [0, -5, 5, 0]
                   }}
                   transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 >
-                  <GraduationCap size={22} weight="fill" className="text-white" />
+                  <GraduationCap size={22} weight="duotone" className="text-white" />
                 </motion.div>
                 
                 <motion.div
-                  className="absolute bottom-12 -right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-coral/80 to-accent shadow-lg flex items-center justify-center z-10"
+                  className="absolute bottom-12 -right-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-[oklch(0.83_0.16_25)] to-[oklch(0.80_0.14_340)] shadow-md flex items-center justify-center z-10"
                   animate={{ 
                     rotate: [0, -10, 10, 0]
                   }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
                 >
-                  <ChatCircleDots size={28} weight="fill" className="text-white" />
+                  <ChatCircleDots size={28} weight="duotone" className="text-white" />
                 </motion.div>
                 
-                <div className="relative p-2 bg-gradient-to-br from-coral via-accent to-lavender rounded-full shadow-2xl">
-                  <div className="p-1.5 bg-white rounded-full">
+                <div className="relative p-2.5 bg-gradient-to-br from-[oklch(0.85_0.18_25)] via-[oklch(0.82_0.15_340)] to-[oklch(0.88_0.12_340)] rounded-full shadow-2xl">
+                  <div className="p-2 bg-white rounded-full">
                     <img 
                       src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces" 
                       alt="Варвара Ищенко" 
