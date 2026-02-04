@@ -112,12 +112,14 @@ function App() {
 
       <div className="container mx-auto px-4 py-16 max-w-6xl">
         <section id="about" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Немного обо мне 😊
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8">
-            Моя история и путь в преподавании
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-coral to-orange bg-clip-text text-transparent leading-tight">
+              Немного обо мне 😊
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Моя история и путь в преподавании
+            </p>
+          </div>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <Card className="flex-1 p-6 md:p-8 shadow-xl border-0 bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-shadow">
               <CardContent className="space-y-3.5 text-base leading-relaxed p-0">
@@ -177,12 +179,14 @@ function App() {
         </section>
 
         <section id="qualifications" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Квалификация и опыт 🎓
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8">
-            Профессиональное образование и международная практика
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-turquoise via-lavender to-bright-magenta bg-clip-text text-transparent leading-tight">
+              Квалификация и опыт 🎓
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Профессиональное образование и международная практика
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
@@ -224,22 +228,26 @@ function App() {
         </section>
 
         <section id="certificates" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Дипломы и сертификаты 📜
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8">
-            Подтверждённая квалификация и достижения
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-sunny-yellow via-orange to-coral bg-clip-text text-transparent leading-tight">
+              Дипломы и сертификаты 📜
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Подтверждённая квалификация и достижения
+            </p>
+          </div>
           <DocumentCarousel />
         </section>
 
         <section id="methodology" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Моя методика 🎯
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8 max-w-4xl mx-auto">
-            Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-coral via-bright-magenta to-lavender bg-clip-text text-transparent leading-tight">
+              Моя методика 🎯
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-3xl mx-auto leading-relaxed">
+              Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
+            </p>
+          </div>
 
           <div className="max-w-5xl mx-auto space-y-6">
             <Card className="p-6 md:p-8 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
@@ -341,12 +349,14 @@ function App() {
         </section>
 
         <section id="testimonials" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Что говорят мои ученики 💬
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8">
-            Реальные отзывы и истории успеха
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-soft-pink to-orange bg-clip-text text-transparent leading-tight">
+              Что говорят мои ученики 💬
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Реальные отзывы и истории успеха
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-5">
             <Card className="h-full p-5 shadow-lg hover:shadow-2xl transition-all border-0 bg-white/80 backdrop-blur-sm">
@@ -427,11 +437,11 @@ function App() {
         </section>
 
         <section id="platforms" className="mb-20 scroll-mt-20">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-turquoise via-sunny-yellow to-coral bg-clip-text text-transparent leading-tight">
               Платформы и специализация 💻
             </h2>
-            <p className="text-foreground/60 text-base">
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
               Современные инструменты и проверенные подходы
             </p>
           </div>
@@ -500,12 +510,14 @@ function App() {
         </section>
 
         <section id="pricing" className="mb-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-            Стоимость занятий 💰
-          </h2>
-          <p className="text-center text-foreground/60 text-base mb-8">
-            Прозрачные цены и бесплатный пробный урок
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange via-coral to-bright-magenta bg-clip-text text-transparent leading-tight">
+              Стоимость занятий 💰
+            </h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Прозрачные цены и бесплатный пробный урок
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <Card className="h-full p-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all relative overflow-hidden">
@@ -573,12 +585,12 @@ function App() {
         </section>
 
         <section id="contact" className="mb-20 scroll-mt-20">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              Готов начать? 🚀
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-orange to-sunny-yellow bg-clip-text text-transparent leading-tight">
+              Готовы начать? 🚀
             </h2>
-            <p className="text-foreground/60 text-base">
-              Свяжись со мной удобным способом и запишись на бесплатный пробный урок!
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Свяжитесь со мной удобным способом и запишитесь на бесплатный пробный урок!
             </p>
           </div>
           <div className="rounded-[2.5rem] shadow-2xl p-1.5 bg-gradient-to-br from-bright-magenta via-orange to-sunny-yellow">
