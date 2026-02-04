@@ -113,10 +113,12 @@ function App() {
       <div className="container mx-auto px-4 py-16 max-w-6xl">
         <section id="about" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-coral to-orange bg-clip-text text-transparent leading-tight">
-              Немного обо мне 😊
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-bright-magenta via-coral to-orange bg-clip-text text-transparent drop-shadow-lg">
+                Немного обо мне 😊
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Моя история и путь в преподавании
             </p>
           </div>
@@ -180,10 +182,12 @@ function App() {
 
         <section id="qualifications" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-turquoise via-lavender to-bright-magenta bg-clip-text text-transparent leading-tight">
-              Квалификация и опыт 🎓
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-turquoise via-lavender to-bright-magenta bg-clip-text text-transparent drop-shadow-lg">
+                Квалификация и опыт 🎓
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Профессиональное образование и международная практика
             </p>
           </div>
@@ -229,10 +233,12 @@ function App() {
 
         <section id="certificates" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-sunny-yellow via-orange to-coral bg-clip-text text-transparent leading-tight">
-              Дипломы и сертификаты 📜
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-sunny-yellow via-orange to-coral bg-clip-text text-transparent drop-shadow-lg">
+                Дипломы и сертификаты 📜
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Подтверждённая квалификация и достижения
             </p>
           </div>
@@ -241,10 +247,12 @@ function App() {
 
         <section id="methodology" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-coral via-bright-magenta to-lavender bg-clip-text text-transparent leading-tight">
-              Моя методика 🎯
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-coral via-bright-magenta to-lavender bg-clip-text text-transparent drop-shadow-lg">
+                Моя методика 🎯
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-3xl mx-auto leading-relaxed font-medium">
               Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
             </p>
           </div>
@@ -350,10 +358,12 @@ function App() {
 
         <section id="testimonials" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-soft-pink to-orange bg-clip-text text-transparent leading-tight">
-              Что говорят мои ученики 💬
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-bright-magenta via-soft-pink to-orange bg-clip-text text-transparent drop-shadow-lg">
+                Что говорят мои ученики 💬
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Реальные отзывы и истории успеха
             </p>
           </div>
@@ -438,10 +448,12 @@ function App() {
 
         <section id="platforms" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-turquoise via-sunny-yellow to-coral bg-clip-text text-transparent leading-tight">
-              Платформы и специализация 💻
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-turquoise via-sunny-yellow to-coral bg-clip-text text-transparent drop-shadow-lg">
+                Платформы и специализация 💻
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Современные инструменты и проверенные подходы
             </p>
           </div>
@@ -511,10 +523,12 @@ function App() {
 
         <section id="pricing" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange via-coral to-bright-magenta bg-clip-text text-transparent leading-tight">
-              Стоимость занятий 💰
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-orange via-coral to-bright-magenta bg-clip-text text-transparent drop-shadow-lg">
+                Стоимость занятий 💰
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Прозрачные цены и бесплатный пробный урок
             </p>
           </div>
@@ -586,10 +600,12 @@ function App() {
 
         <section id="contact" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-bright-magenta via-orange to-sunny-yellow bg-clip-text text-transparent leading-tight">
-              Готовы начать? 🚀
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-bright-magenta via-orange to-sunny-yellow bg-clip-text text-transparent drop-shadow-lg">
+                Готовы начать? 🚀
+              </span>
             </h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/80 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Свяжитесь со мной удобным способом и запишитесь на бесплатный пробный урок!
             </p>
           </div>
