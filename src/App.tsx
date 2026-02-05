@@ -53,19 +53,19 @@ function App() {
         <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="max-w-5xl mx-auto text-center">
             <div className="flex flex-wrap gap-2.5 mb-5 justify-center">
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm font-semibold">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-gradient-to-r from-primary to-[oklch(0.70_0.26_350)] text-primary-foreground hover:shadow-lg hover:scale-105 transition-all shadow-md font-semibold border-0">
                 <Sparkle className="inline mr-2" weight="fill" size={18} />
                 10 лет преподавания
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm font-semibold">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-gradient-to-r from-secondary to-[oklch(0.65_0.28_300)] text-secondary-foreground hover:shadow-lg hover:scale-105 transition-all shadow-md font-semibold border-0">
                 <Star className="mr-2" weight="fill" size={18} />
                 C1 English
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm font-semibold">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-gradient-to-r from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] text-white hover:shadow-lg hover:scale-105 transition-all shadow-md font-semibold border-0">
                 <Globe className="mr-2" weight="fill" size={18} />
                 Международный опыт
               </Badge>
-              <Badge className="text-sm md:text-base px-5 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm font-semibold">
+              <Badge className="text-sm md:text-base px-5 py-2 bg-gradient-to-r from-accent to-[oklch(0.70_0.30_70)] text-accent-foreground hover:shadow-lg hover:scale-105 transition-all shadow-md font-semibold border-0">
                 <Heart className="mr-2" weight="fill" size={18} />
                 Ученики 18+
               </Badge>
@@ -83,7 +83,7 @@ function App() {
             <div>
               <Button 
                 size="lg" 
-                className="text-base md:text-lg px-8 py-5 md:px-10 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold bg-primary text-primary-foreground hover:bg-primary/90"
+                className="text-base md:text-lg px-8 py-5 md:px-10 md:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-semibold bg-gradient-to-r from-primary via-[oklch(0.68_0.30_350)] to-[oklch(0.70_0.28_360)] text-primary-foreground hover:scale-105 hover:brightness-110 border-0"
                 onClick={scrollToContact}
               >
                 <Sparkle className="mr-2.5" weight="fill" size={22} />
@@ -129,29 +129,29 @@ function App() {
             </Card>
             <div className="w-full md:w-64 flex-shrink-0">
               <div className="relative group">
-                <div className="absolute -inset-2.5 bg-secondary rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity" />
+                <div className="absolute -inset-2.5 bg-gradient-to-br from-primary/30 via-secondary/30 to-accent/30 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity" />
                 
-                <div className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-accent shadow-md flex items-center justify-center z-10">
+                <div className="absolute -top-6 -right-7 w-16 h-16 rounded-full bg-gradient-to-br from-accent to-[oklch(0.75_0.30_60)] shadow-lg flex items-center justify-center z-10">
                   <Sparkle size={30} weight="duotone" className="text-accent-foreground" />
                 </div>
                 
-                <div className="absolute -bottom-5 -left-5 w-14 h-14 rounded-full bg-primary shadow-md flex items-center justify-center z-10">
+                <div className="absolute -bottom-5 -left-5 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] shadow-lg flex items-center justify-center z-10">
                   <Heart size={24} weight="duotone" className="text-primary-foreground" />
                 </div>
                 
-                <div className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-muted shadow-sm flex items-center justify-center z-10">
-                  <Star size={20} weight="duotone" className="text-muted-foreground" />
+                <div className="absolute top-6 -left-8 w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] shadow-md flex items-center justify-center z-10">
+                  <Star size={20} weight="duotone" className="text-secondary-foreground" />
                 </div>
                 
-                <div className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-secondary shadow-sm flex items-center justify-center z-10">
-                  <GraduationCap size={18} weight="duotone" className="text-secondary-foreground" />
+                <div className="absolute -top-3 left-10 w-10 h-10 rounded-full bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] shadow-md flex items-center justify-center z-10">
+                  <GraduationCap size={18} weight="duotone" className="text-white" />
                 </div>
                 
-                <div className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-accent shadow-md flex items-center justify-center z-10">
+                <div className="absolute bottom-10 -right-8 w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-[oklch(0.75_0.30_70)] shadow-lg flex items-center justify-center z-10">
                   <ChatCircleDots size={24} weight="duotone" className="text-accent-foreground" />
                 </div>
                 
-                <div className="relative p-2 bg-gradient-to-br from-primary to-accent rounded-full shadow-xl">
+                <div className="relative p-2 bg-gradient-to-br from-primary via-secondary to-accent rounded-full shadow-xl">
                   <div className="p-1.5 bg-white rounded-full">
                     <img 
                       src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces" 
@@ -178,7 +178,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0 space-y-2.5">
-                <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center mb-3 shadow-md">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center mb-3 shadow-md">
                   <GraduationCap size={28} className="text-primary-foreground" weight="fill" />
                 </div>
                 <h3 className="text-lg font-bold">Образование</h3>
@@ -190,8 +190,8 @@ function App() {
 
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0 space-y-2.5">
-                <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center mb-3 shadow-md">
-                  <Globe size={28} className="text-primary-foreground" weight="fill" />
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center mb-3 shadow-md">
+                  <Globe size={28} className="text-white" weight="fill" />
                 </div>
                 <h3 className="text-lg font-bold">Международный опыт</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
@@ -202,8 +202,8 @@ function App() {
 
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0 space-y-2.5">
-                <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center mb-3 shadow-md">
-                  <Student size={28} className="text-primary-foreground" weight="fill" />
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center mb-3 shadow-md">
+                  <Student size={28} className="text-secondary-foreground" weight="fill" />
                 </div>
                 <h3 className="text-lg font-bold">Практика</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
@@ -240,7 +240,7 @@ function App() {
             <Card className="p-6 md:p-8 shadow-lg bg-card">
               <CardContent className="p-0 space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center flex-shrink-0 shadow-md">
                     <Student size={28} className="text-primary-foreground" weight="fill" />
                   </div>
                   <div>
@@ -254,8 +254,8 @@ function App() {
                 <Separator className="my-4" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
-                    <Chats size={28} className="text-primary-foreground" weight="fill" />
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <Chats size={28} className="text-secondary-foreground" weight="fill" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2.5">Живые уроки</h3>
@@ -268,8 +268,8 @@ function App() {
                 <Separator className="my-4" />
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-3xl bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
-                    <Sparkle size={28} className="text-primary-foreground" weight="fill" />
+                  <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-accent to-[oklch(0.75_0.30_60)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <Sparkle size={28} className="text-accent-foreground" weight="fill" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2.5">Современные материалы</h3>
@@ -284,8 +284,8 @@ function App() {
             <div className="grid md:grid-cols-3 gap-5">
               <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
                 <CardContent className="p-0 text-center space-y-2.5">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
-                    <Chats size={26} className="text-primary-foreground" weight="fill" />
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center mx-auto mb-3 shadow-md">
+                    <Chats size={26} className="text-secondary-foreground" weight="fill" />
                   </div>
                   <h3 className="text-base font-bold">Разговорный английский</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
@@ -296,7 +296,7 @@ function App() {
 
               <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
                 <CardContent className="p-0 text-center space-y-2.5">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center mx-auto mb-3 shadow-md">
                     <GraduationCap size={26} className="text-primary-foreground" weight="fill" />
                   </div>
                   <h3 className="text-base font-bold">Грамматика "по полочкам"</h3>
@@ -308,8 +308,8 @@ function App() {
 
               <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
                 <CardContent className="p-0 text-center space-y-2.5">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
-                    <Globe size={26} className="text-primary-foreground" weight="fill" />
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center mx-auto mb-3 shadow-md">
+                    <Globe size={26} className="text-white" weight="fill" />
                   </div>
                   <h3 className="text-base font-bold">Для работы и путешествий</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
@@ -322,7 +322,7 @@ function App() {
             <Card className="p-6 shadow-lg bg-card">
               <CardContent className="p-0">
                 <div className="flex items-start gap-4">
-                  <CheckCircle size={32} className="flex-shrink-0 mt-1 text-primary" weight="fill" />
+                  <CheckCircle size={32} className="flex-shrink-0 mt-1 text-[oklch(0.68_0.26_190)]" weight="fill" />
                   <div>
                     <h3 className="text-lg font-bold mb-2">Индивидуальный подход</h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
@@ -349,7 +349,7 @@ function App() {
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
                     А
                   </div>
                   <div>
@@ -359,13 +359,13 @@ function App() {
                 </div>
                 <div className="flex gap-1 mb-2.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} weight="fill" size={18} className="text-primary" />
+                    <Star key={i} weight="fill" size={18} className="text-accent" />
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
                   "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
                 </p>
-                <Badge className="text-xs bg-primary text-primary-foreground font-semibold shadow-sm">
+                <Badge className="text-xs bg-gradient-to-r from-accent to-[oklch(0.75_0.30_60)] text-accent-foreground font-semibold shadow-sm border-0">
                   Сдала экзамен на 5
                 </Badge>
               </CardContent>
@@ -374,7 +374,7 @@ function App() {
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
                     Д
                   </div>
                   <div>
@@ -384,13 +384,13 @@ function App() {
                 </div>
                 <div className="flex gap-1 mb-2.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} weight="fill" size={18} className="text-primary" />
+                    <Star key={i} weight="fill" size={18} className="text-accent" />
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
                   "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
                 </p>
-                <Badge className="text-xs bg-primary text-primary-foreground font-semibold shadow-sm">
+                <Badge className="text-xs bg-gradient-to-r from-secondary to-[oklch(0.68_0.26_290)] text-secondary-foreground font-semibold shadow-sm border-0">
                   Повысил уровень до B2+
                 </Badge>
               </CardContent>
@@ -399,7 +399,7 @@ function App() {
             <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center text-white font-bold text-lg shadow-md">
                     Е
                   </div>
                   <div>
@@ -409,13 +409,13 @@ function App() {
                 </div>
                 <div className="flex gap-1 mb-2.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} weight="fill" size={18} className="text-primary" />
+                    <Star key={i} weight="fill" size={18} className="text-accent" />
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
                   "Начала после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
                 </p>
-                <Badge className="text-xs bg-primary text-primary-foreground font-semibold shadow-sm">
+                <Badge className="text-xs bg-gradient-to-r from-[oklch(0.68_0.26_190)] to-[oklch(0.70_0.28_200)] text-white font-semibold shadow-sm border-0">
                   Вернулась к английскому после 8 лет
                 </Badge>
               </CardContent>
@@ -439,8 +439,8 @@ function App() {
                 <Card className="p-5 shadow-md bg-card">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                        <ChatCircleDots size={22} className="text-primary-foreground" weight="fill" />
+                      <div className="w-11 h-11 bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <ChatCircleDots size={22} className="text-secondary-foreground" weight="fill" />
                       </div>
                       <div>
                         <h3 className="text-lg font-bold mb-1.5">Платформы</h3>
@@ -453,8 +453,8 @@ function App() {
                 <Card className="p-5 shadow-md bg-card">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                        <CheckCircle size={22} className="text-primary-foreground" weight="fill" />
+                      <div className="w-11 h-11 bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <CheckCircle size={22} className="text-white" weight="fill" />
                       </div>
                       <div>
                         <h3 className="text-lg font-bold mb-1.5">Специализация</h3>
@@ -467,7 +467,7 @@ function App() {
                 <Card className="p-5 shadow-md bg-card">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <div className="w-11 h-11 bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
                         <Student size={22} className="text-primary-foreground" weight="fill" />
                       </div>
                       <div>
@@ -481,8 +481,8 @@ function App() {
                 <Card className="p-5 shadow-md bg-card">
                   <CardContent className="p-0">
                     <div className="flex items-start gap-3.5 mb-2">
-                      <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
-                        <Heart size={22} className="text-primary-foreground" weight="fill" />
+                      <div className="w-11 h-11 bg-gradient-to-br from-accent to-[oklch(0.75_0.30_60)] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <Heart size={22} className="text-accent-foreground" weight="fill" />
                       </div>
                       <div>
                         <h3 className="text-lg font-bold mb-1.5">Мой принцип</h3>
@@ -509,7 +509,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <Card className="h-full p-6 shadow-lg bg-card hover:shadow-xl transition-all">
               <CardContent className="p-0">
-                <Badge className="mb-3 bg-primary text-primary-foreground font-bold text-xs shadow-sm">
+                <Badge className="mb-3 bg-gradient-to-r from-primary to-[oklch(0.70_0.30_350)] text-primary-foreground font-bold text-xs shadow-md border-0">
                   Популярный выбор
                 </Badge>
                 <h3 className="text-xl font-bold mb-4">Индивидуальные занятия</h3>
@@ -526,11 +526,11 @@ function App() {
                     <span className="text-sm font-medium">50-55 минут личного внимания</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Sparkle size={22} className="flex-shrink-0 mt-0.5 text-primary" weight="fill" />
+                    <Sparkle size={22} className="flex-shrink-0 mt-0.5 text-accent" weight="fill" />
                     <span className="font-bold text-sm text-foreground">Первое занятие 20-25 минут БЕСПЛАТНО!</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-primary" weight="fill" />
+                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-secondary" weight="fill" />
                     <span className="text-sm font-medium">Программа под ваши цели</span>
                   </li>
                 </ul>
@@ -539,7 +539,7 @@ function App() {
 
             <Card className="h-full p-6 shadow-lg bg-card hover:shadow-xl transition-all">
               <CardContent className="p-0">
-                <Badge className="mb-3 bg-accent text-accent-foreground font-bold text-xs shadow-sm">
+                <Badge className="mb-3 bg-gradient-to-r from-accent to-[oklch(0.75_0.30_60)] text-accent-foreground font-bold text-xs shadow-md border-0">
                   Выгодное предложение
                 </Badge>
                 <h3 className="text-xl font-bold mb-4">Парные занятия</h3>
@@ -552,15 +552,15 @@ function App() {
                 <Separator className="my-4" />
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2.5">
-                    <Clock size={22} className="flex-shrink-0 mt-0.5 text-accent-foreground" weight="fill" />
+                    <Clock size={22} className="flex-shrink-0 mt-0.5 text-accent" weight="fill" />
                     <span className="text-sm font-medium">60-65 минут в паре с другом</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Chats size={22} className="flex-shrink-0 mt-0.5 text-accent-foreground" weight="fill" />
+                    <Chats size={22} className="flex-shrink-0 mt-0.5 text-secondary" weight="fill" />
                     <span className="text-sm font-medium">Больше практики общения</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-accent-foreground" weight="fill" />
+                    <CheckCircle size={22} className="flex-shrink-0 mt-0.5 text-[oklch(0.68_0.26_190)]" weight="fill" />
                     <span className="text-sm font-medium">Экономия + весёлая атмосфера</span>
                   </li>
                 </ul>
@@ -584,7 +584,7 @@ function App() {
               <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-6">
                 <Card className="p-5 text-center shadow-md hover:shadow-lg transition-all bg-card">
                   <CardContent className="p-0">
-                    <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center mx-auto mb-3 shadow-md">
                       <Phone size={26} className="text-primary-foreground" weight="fill" />
                     </div>
                     <h3 className="font-bold mb-1.5 text-base">Телефон</h3>
@@ -596,11 +596,11 @@ function App() {
 
                 <Card className="p-5 text-center shadow-md hover:shadow-lg transition-all bg-card">
                   <CardContent className="p-0">
-                    <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
-                      <EnvelopeSimple size={26} className="text-primary-foreground" weight="fill" />
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center mx-auto mb-3 shadow-md">
+                      <EnvelopeSimple size={26} className="text-secondary-foreground" weight="fill" />
                     </div>
                     <h3 className="font-bold mb-1.5 text-base">Email</h3>
-                    <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-primary hover:opacity-80 transition-colors">
+                    <a href="mailto:varvara.ishenko@gmail.com" className="break-all text-xs font-semibold text-secondary hover:opacity-80 transition-colors">
                       varvara.ishenko@gmail.com
                     </a>
                   </CardContent>
@@ -608,8 +608,8 @@ function App() {
 
                 <Card className="p-5 text-center shadow-md hover:shadow-lg transition-all bg-card">
                   <CardContent className="p-0">
-                    <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-3 shadow-md">
-                      <MapPin size={26} className="text-primary-foreground" weight="fill" />
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-[oklch(0.75_0.30_60)] flex items-center justify-center mx-auto mb-3 shadow-md">
+                      <MapPin size={26} className="text-accent-foreground" weight="fill" />
                     </div>
                     <h3 className="font-bold mb-1.5 text-base">Локация</h3>
                     <p className="text-muted-foreground font-semibold text-sm">
@@ -623,7 +623,7 @@ function App() {
               <div className="text-center">
                 <Button 
                   size="lg" 
-                  className="text-base px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold bg-primary text-primary-foreground hover:bg-primary/90"
+                  className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-semibold bg-gradient-to-r from-primary via-[oklch(0.68_0.30_350)] to-[oklch(0.70_0.28_360)] text-primary-foreground hover:scale-105 hover:brightness-110 border-0"
                   asChild
                 >
                   <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
