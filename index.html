@@ -1,92 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Варвара Ищенко - Преподаватель Английского</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; color: white; padding: 60px 20px; }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        header p { font-size: 1.3em; opacity: 0.95; }
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .card h2 { color: #667eea; margin-bottom: 20px; font-size: 2em; }
-        .card p { font-size: 1.1em; margin-bottom: 15px; }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        .feature {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-        .feature h3 { color: #667eea; margin-bottom: 10px; }
-        .contact { text-align: center; margin-top: 30px; }
-        .contact a {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-        .contact a:hover {
-            background: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-        footer { text-align: center; color: white; padding: 30px 20px; opacity: 0.9; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Варвара Ищенко</h1>
-            <p>Преподаватель английского языка</p>
-        </header>
-        <div class="card">
-            <h2>О преподавателе</h2>
-            <p>Добро пожаловать! Я - Варвара Владимировна Ищенко, преподаватель английского языка с опытом работы в высшем учебном заведении.</p>
-            <p>Я работаю ассистентом на кафедре иностранных языков в Санкт-Петербургском политехническом университете Петра Великого.</p>
-        </div>
-        <div class="card">
-            <h2>Мои услуги</h2>
-            <div class="features">
-                <div class="feature"><h3>Общий английский</h3><p>Развитие всех языковых навыков</p></div>
-                <div class="feature"><h3>Академический</h3><p>Подготовка к учебе в университете</p></div>
-                <div class="feature"><h3>Деловой английский</h3><p>Английский для работы и карьеры</p></div>
-                <div class="feature"><h3>Экзамены</h3><p>Подготовка к IELTS, TOEFL</p></div>
-            </div>
-        </div>
-        <div class="card contact">
-            <h2>Свяжитесь со мной</h2>
-            <p>Готовы начать обучение?</p>
-            <a href="mailto:itshenko_vv@spbstu.ru">Написать письмо</a>
-        </div>
-        <footer>
-            <p>© 2026 Варвара Ищенко | Санкт-Петербург</p>
-        </footer>
-    </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Варвара Ищенко - Преподаватель Английского | English Tutor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/src/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
