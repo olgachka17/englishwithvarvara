@@ -46,10 +46,18 @@ function App() {
   const scrollToContact = () => scrollToSection('contact')
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation onNavigate={scrollToSection} />
+    <div className="min-h-screen bg-background relative">
+      <div className="fixed inset-0 pointer-events-none opacity-30">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-0 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-accent/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-tertiary/15 rounded-full blur-3xl" />
+      </div>
       
-      <div className="relative overflow-hidden pt-20" id="hero">
+      <div className="relative z-10">
+        <Navigation onNavigate={scrollToSection} />
+        
+        <div className="relative overflow-hidden pt-20" id="hero">
         <div className="container mx-auto px-4 py-12 md:py-16">
           <div className="max-w-5xl mx-auto text-center">
             <div className="flex flex-wrap gap-2.5 mb-5 justify-center">
@@ -679,6 +687,7 @@ function App() {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   )
 }
