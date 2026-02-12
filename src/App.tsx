@@ -75,17 +75,16 @@ function App() {
               </Badge>
               <Badge className="text-sm md:text-base px-5 py-2 bg-gradient-to-r from-accent to-[oklch(0.70_0.30_70)] text-accent-foreground hover:shadow-lg hover:scale-105 transition-all shadow-md font-semibold border-0">
                 <Heart className="mr-2" weight="fill" size={18} />
-                Ученики 18+
+                Групповые и индивидуальные уроки
               </Badge>
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight text-foreground">
-              Английский для взрослых 18+:<br />
-              заговорите уверенно через несколько месяцев
+              Английский для взрослых: заговорите уверенно через несколько месяцев регулярных занятий
             </h1>
             
             <p className="text-lg md:text-xl mb-6 leading-relaxed max-w-4xl mx-auto text-muted-foreground">
-              Я <span className="font-bold text-foreground">Варвара</span>, преподаю английский 10 лет и помогаю взрослым говорить уверенно для работы, переезда и путешествий 💖
+              Я <span className="font-bold text-foreground">Варвара</span>, преподаю английский уже 10 лет и помогаю взрослым начать говорить — для работы, переезда и путешествий, без зубрёжки и скучных учебников.
             </p>
             
             <div>
@@ -98,7 +97,7 @@ function App() {
                 Записаться на бесплатный пробный урок
               </Button>
               <p className="text-sm text-muted-foreground mt-2 font-medium">
-                20 минут знакомства и персональный план обучения
+                20 минут знакомства: определим ваш уровень, разберём цели и составим персональный план обучения.
               </p>
             </div>
           </div>
@@ -106,6 +105,74 @@ function App() {
       </div>
 
       <div className="container mx-auto px-4 py-16 max-w-6xl">
+        <section id="benefits" className="mb-20 scroll-mt-20">
+          <div className="grid md:grid-cols-2 gap-5">
+            <Card className="p-6 md:p-8 shadow-lg hover:shadow-xl transition-all bg-card">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <CheckCircle size={24} className="text-primary-foreground" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Для взрослых 18+</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Можно прийти «с нуля» или после длинного перерыва. Подстроимся под ваш уровень и спокойно разгонимся.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 md:p-8 shadow-lg hover:shadow-xl transition-all bg-card">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <Chats size={24} className="text-secondary-foreground" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Уроки 1-на-1</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      С упором на разговор и реальные ситуации. Много общения и практики, которая сразу закрепляет материал.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 md:p-8 shadow-lg hover:shadow-xl transition-all bg-card">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-accent to-[oklch(0.75_0.30_60)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <Sparkle size={24} className="text-accent-foreground" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Современные материалы</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Видео и мемы вместо скучной зубрёжки. Новые слова и правила запоминаются быстрее и без ощущения скучных уроков.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 md:p-8 shadow-lg hover:shadow-xl transition-all bg-card">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center flex-shrink-0 shadow-md">
+                    <GraduationCap size={24} className="text-white" weight="fill" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2">Личный план обучения</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Разработаю под ваши цели: работа, переезд, учёба или путешествия. Только то, что вам действительно нужно.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         <section id="about" className="mb-20 scroll-mt-20">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight text-foreground">
@@ -119,19 +186,13 @@ function App() {
             <Card className="flex-1 p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow bg-card">
               <CardContent className="space-y-3.5 text-base leading-relaxed p-0">
                 <p>
-                  Работаю преподавателем английского уже <span className="font-bold text-foreground">10 лет</span>, и если вернуться к началу карьеры, то сейчас я уже лучшая версия себя! 🎉
+                  Уже больше 10 лет я помогаю взрослым возвращаться к английскому — с нуля, после долгого перерыва или неудачного школьного опыта. На моих уроках не будет скучных таблиц спряжений: работаем с живым языком, мемами и реальными ситуациями из жизни.
                 </p>
                 <p>
-                  Мой текущий уровень — <span className="font-bold text-foreground">C1</span>, но продолжаю совершенствоваться. Учиться никогда не поздно! 📚
+                  Я люблю современную культуру и то, как люди на самом деле говорят — в сериалах, на работе, в поездках. Поэтому на уроках много смеха и живого общения: так проще расслабиться и начать говорить без зажима.
                 </p>
                 <p>
-                  У меня высшее лингвистическое образование и обучение в аспирантуре, что было не так-то просто 😅
-                </p>
-                <p>
-                  Есть международный опыт работы в <span className="font-semibold text-foreground">Китае в детском саду</span>, также сданный международный экзамен и небольшая стажировка в <span className="font-semibold text-foreground">Шотландии</span> 🌍
-                </p>
-                <p className="text-base font-bold pt-2 text-foreground">
-                  Ещё говорят, что я весёлая! 😂
+                  У меня уровень C1, я каждый день в языке: смотрю сериалы, читаю, слушаю подкасты. И понимаю, что взрослым английский нужен не «вообще», а для конкретных задач — работа, деловые встречи, путешествия. Именно под это и выстраиваю обучение.
                 </p>
               </CardContent>
             </Card>
@@ -162,7 +223,7 @@ function App() {
                 <div className="relative p-2 bg-gradient-to-br from-primary via-secondary to-accent rounded-full shadow-xl">
                   <div className="p-1.5 bg-white rounded-full">
                     <img 
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces" 
+                      src="/englishwithvarvara/images/varvara.jpg" 
                       alt="Варвара Ищенко" 
                       className="w-full h-full object-cover rounded-full aspect-square shadow-lg"
                     />
@@ -191,7 +252,7 @@ function App() {
                 </div>
                 <h3 className="text-lg font-bold">Образование</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Высшее лингвистическое образование СПбГПУ, обучение в аспирантуре. Факультет Иностранных языков.
+                  Диплом бакалавра и магистра СПбГПУ (Факультет иностранных языков). Обучение в аспирантуре, международные экзамены и сертификаты.
                 </p>
               </CardContent>
             </Card>
@@ -203,7 +264,7 @@ function App() {
                 </div>
                 <h3 className="text-lg font-bold">Международный опыт</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Работа в детском саду в Китае, стажировка в Шотландии, сданный международный экзамен.
+                  Работала в международном детском саду в Китае. Прошла стажировку в Шотландии. Сдала международный экзамен уровня C1.
                 </p>
               </CardContent>
             </Card>
@@ -213,9 +274,9 @@ function App() {
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center mb-3 shadow-md">
                   <Student size={28} className="text-secondary-foreground" weight="fill" />
                 </div>
-                <h3 className="text-lg font-bold">Практика</h3>
+                <h3 className="text-lg font-bold">Преподавание</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Преподаватель в СПбГПУ с 2019 года. Работа на различных специальностях, составление планов уроков.
+                  Преподаватель в СПбГПУ с 2019 года. Работа со студентами разных специальностей, разработка курсов и персональных планов обучения.
                 </p>
               </CardContent>
             </Card>
@@ -240,7 +301,7 @@ function App() {
               Моя методика 🎯
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed font-medium">
-              Преподаю английский для взрослых 18+ — для работы, поездок, учёбы или просто чтобы наконец-то начать говорить без ступора
+              Рассказываю, как именно я учу — в фокусе результат и реальное общение
             </p>
           </div>
 
@@ -254,7 +315,7 @@ function App() {
                   <div>
                     <h3 className="text-xl font-bold mb-2.5">Беру любой уровень</h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
-                      Можно прийти <span className="font-bold text-foreground">"с нуля"</span>, можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
+                      Можно прийти "с нуля", можно с базой или после долгого перерыва — подстроимся и спокойно разгонимся.
                     </p>
                   </div>
                 </div>
@@ -266,9 +327,9 @@ function App() {
                     <Chats size={28} className="text-secondary-foreground" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2.5">Живые уроки</h3>
+                    <h3 className="text-xl font-bold mb-2.5">Реальный разговорный английский</h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
-                      Много общения, понятные объяснения и практика, которая сразу закрепляет материал. Использую качественные материалы платформы и добавляю свои задания под вашу цель.
+                      Уроки построены на реальных ситуациях: деловые встречи на Zoom, small talk во время поездок, переговоры с клиентами. Много говорите вы, не я.
                     </p>
                   </div>
                 </div>
@@ -280,48 +341,36 @@ function App() {
                     <Sparkle size={28} className="text-accent-foreground" weight="fill" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2.5">Современные материалы</h3>
+                    <h3 className="text-xl font-bold mb-2.5">Видео и мемы вместо зубрёжки</h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
-                      Иногда подключаю короткие видео и мемы по теме — не ради "развлечь", а чтобы новые слова и правила <span className="font-bold text-foreground">запоминались быстрее и без ощущения зубрёжки</span>.
+                      Использую короткие видео, мемы и контент из реальной жизни — так новые слова и грамматика запоминаются в 3 раза быстрее и уроки не скучные, как в школе.
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <div className="grid md:grid-cols-3 gap-5">
+            <div className="grid md:grid-cols-2 gap-5">
               <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
                 <CardContent className="p-0 text-center space-y-2.5">
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center mx-auto mb-3 shadow-md">
                     <Chats size={26} className="text-secondary-foreground" weight="fill" />
                   </div>
-                  <h3 className="text-base font-bold">Разговорный английский</h3>
+                  <h3 className="text-base font-bold">Для работы, поездок и общения</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Для тех, кто хочет уверенно общаться и преодолеть языковой барьер
+                    Созвоны с коллегами, переговоры с клиентами, small talk на конференциях и путешествиях — учим реальный язык, который нужен сейчас
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
                 <CardContent className="p-0 text-center space-y-2.5">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center mx-auto mb-3 shadow-md">
-                    <GraduationCap size={26} className="text-primary-foreground" weight="fill" />
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-[oklch(0.75_0.30_70)] flex items-center justify-center mx-auto mb-3 shadow-md">
+                    <CheckCircle size={26} className="text-accent-foreground" weight="fill" />
                   </div>
-                  <h3 className="text-base font-bold">Грамматика "по полочкам"</h3>
+                  <h3 className="text-base font-bold">Подготовка к собеседованиям</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Систематизируем знания и разбираем сложные темы понятным языком
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="h-full p-5 shadow-lg hover:shadow-xl transition-all bg-card">
-                <CardContent className="p-0 text-center space-y-2.5">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center mx-auto mb-3 shadow-md">
-                    <Globe size={26} className="text-white" weight="fill" />
-                  </div>
-                  <h3 className="text-base font-bold">Для работы и путешествий</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Практический английский под конкретные цели и ситуации
+                    Практикуем реальные вопросы на интервью, разбираем сложные ситуации, повышаем уверенность
                   </p>
                 </CardContent>
               </Card>
@@ -358,7 +407,7 @@ function App() {
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-[oklch(0.70_0.30_350)] flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
-                    А
+                    🎯
                   </div>
                   <div>
                     <h3 className="font-bold text-base">Анастасия</h3>
@@ -371,11 +420,10 @@ function App() {
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
-                  "Варвара помогла мне подготовиться к экзамену в университете. Её методика действительно работает! Теперь говорю по-английски гораздо увереннее. 🎓"
+                  Варвара - это очень хороший преподаватель английского языка! С плохой базой английского я решила сдавать ОГЭ, за тот учебный год я получила много полезных знаний и опыта, я также продолжила готовиться с данным преподавателем к ЕГЭ, всё это время занятия по английскому языку никогда не были утомительными, я всегда с интересом подходила к изучению иностранного языка, так как именно с правильным преподавателем просыпается интерес к продуктивной работе!!
                 </p>
                 <Badge className="text-xs bg-gradient-to-r from-accent to-[oklch(0.75_0.30_60)] text-accent-foreground font-semibold shadow-sm border-0">
-                  Сдала экзамен на 5
-                </Badge>
+                  Сдала ОГЭ и готовится к ЕГЭ</Badge>
               </CardContent>
             </Card>
 
@@ -383,7 +431,7 @@ function App() {
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-[oklch(0.65_0.28_300)] flex items-center justify-center text-primary-foreground font-bold text-lg shadow-md">
-                    Д
+                    💼
                   </div>
                   <div>
                     <h3 className="font-bold text-base">Дмитрий</h3>
@@ -396,10 +444,10 @@ function App() {
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
-                  "Занимаюсь с Варварой уже полгода. Весёлая, всегда позитивная, и главное — уроки проходят легко и интересно. С B1 дошёл до B2+! 🚀"
+                  "Преподаватель гибко подстраивает график и идёт навстречу в форс‑мажорах, все занятия проходили онлайн. Материал подаётся структурировано и понятным языком: с низкого школьного уровня мы выстроили программу под мои цели. В результате я перестал «плавать» в правилах, лучше понимаю английский на слух, говорю увереннее и иногда даже думаю на нём."
                 </p>
                 <Badge className="text-xs bg-gradient-to-r from-secondary to-[oklch(0.68_0.26_290)] text-secondary-foreground font-semibold shadow-sm border-0">
-                  Повысил уровень до B2+
+                  Повысил уровень до В2+
                 </Badge>
               </CardContent>
             </Card>
@@ -408,7 +456,7 @@ function App() {
               <CardContent className="p-0">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[oklch(0.68_0.26_190)] to-[oklch(0.65_0.30_210)] flex items-center justify-center text-white font-bold text-lg shadow-md">
-                    Е
+                    ✈️
                   </div>
                   <div>
                     <h3 className="font-bold text-base">Елена</h3>
@@ -421,10 +469,10 @@ function App() {
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-3 text-sm">
-                  "Начала после долгого перерыва — боялась, что всё забыла. Варвара помогла восстановить знания и выйти на новый уровень. Теперь спокойно общаюсь с иностранными коллегами! 💼"
+                  "Вернулась к английскому после 8 лет. Варвара помогла восстановить уровень за пол года занятий. Теперь спокойно созваниваюсь и переписываюсь с коллегами из Европы — даже планирую переезд."
                 </p>
                 <Badge className="text-xs bg-gradient-to-r from-[oklch(0.68_0.26_190)] to-[oklch(0.70_0.28_200)] text-white font-semibold shadow-sm border-0">
-                  Вернулась к английскому после 8 лет
+                  Готовится к переезду
                 </Badge>
               </CardContent>
             </Card>
@@ -466,7 +514,7 @@ function App() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold mb-1.5">Специализация</h3>
-                        <p className="text-muted-foreground text-sm">Подготовка к школьным, университетским экзаменам, ОГЭ. Акцент на говорении.</p>
+                        <p className="text-muted-foreground text-sm">Разговорный английский для работы, поездок и общения. Подготовка к собеседованиям и экзаменам для взрослых.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -522,8 +570,14 @@ function App() {
                 </Badge>
                 <h3 className="text-xl font-bold mb-4">Индивидуальные занятия</h3>
                 <div className="mb-5">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-4xl font-bold text-foreground">1800₽</span>
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-sm text-muted-foreground">1 месяц (со скидкой):</span>
+                    <span className="text-3xl font-bold text-foreground">1800₽</span>
+                    <span className="text-muted-foreground text-base font-semibold">/урок</span>
+                  </div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-sm text-muted-foreground">Дальше:</span>
+                    <span className="text-3xl font-bold text-foreground">2400₽</span>
                     <span className="text-muted-foreground text-base font-semibold">/урок</span>
                   </div>
                 </div>
@@ -596,8 +650,8 @@ function App() {
                       <Phone size={26} className="text-primary-foreground" weight="fill" />
                     </div>
                     <h3 className="font-bold mb-1.5 text-base">Телефон</h3>
-                    <a href="tel:+79502274443" className="text-sm font-semibold text-primary hover:opacity-80 transition-colors">
-                      +7 (950) 227-44-43
+                    <a href="tel:+88950227443" className="text-sm font-semibold text-primary hover:opacity-80 transition-colors">
+                      +8 (950) 227-44-43
                     </a>
                   </CardContent>
                 </Card>
@@ -628,17 +682,20 @@ function App() {
                 </Card>
               </div>
 
-              <div className="text-center">
+              <div className="text-center space-y-4">
                 <Button 
                   size="lg" 
                   className="text-base px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-semibold bg-gradient-to-r from-primary via-[oklch(0.68_0.30_350)] to-[oklch(0.70_0.28_360)] text-primary-foreground hover:scale-105 hover:brightness-110 border-0"
                   asChild
                 >
-                  <a href="https://wa.me/79502274443" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/Varvaraishenko" target="_blank" rel="noopener noreferrer">
                     <Sparkle className="mr-2.5" weight="fill" size={22} />
-                    Написать в WhatsApp
+                    Написать в Telegram
                   </a>
                 </Button>
+                <p className="text-sm text-muted-foreground font-medium max-w-md mx-auto">
+                  Напишите кодовое слово «пробный» в Telegram — вышлю 2–3 варианта времени на ближайшие дни.
+                </p>
               </div>
             </div>
           </div>
@@ -650,7 +707,7 @@ function App() {
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <div className="flex justify-center gap-6 mb-5">
               <a 
-                href="tel:+79502274443"
+                href="tel:+88950227443"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone size={24} weight="fill" />
@@ -662,7 +719,7 @@ function App() {
                 <EnvelopeSimple size={24} weight="fill" />
               </a>
               <a 
-                href="https://wa.me/79502274443"
+                href="https://t.me/Varvaraishenko"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -675,10 +732,7 @@ function App() {
             
             <div>
               <p className="text-foreground mb-1 font-semibold">
-                Варвара Ищенко
-              </p>
-              <p className="text-muted-foreground text-sm mb-3">
-                Преподаватель английского языка
+                Варвара, твой преподаватель английского языка ❤️
               </p>
               <p className="text-xs text-muted-foreground">
                 © 2024 Все права защищены

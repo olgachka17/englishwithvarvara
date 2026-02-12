@@ -92,7 +92,7 @@ export function Navigation({ onNavigate }: NavigationProps) {
               <Button
                 size="sm"
                 onClick={() => handleNavClick('contact')}
-                className="rounded-full bg-coral text-white hover:bg-coral/90 font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105 border-0"
+                className="rounded-full bg-[#ff5555] text-white hover:text-white font-bold shadow-lg hover:shadow-2xl transition-all hover:scale-110 border-0 px-6 py-5 text-base"
               >
                 <Phone size={18} weight="fill" className="mr-1.5" />
                 Записаться
